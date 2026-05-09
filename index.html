@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COODIE_STUDIO™ – Custom Web Design & Web Development</title>
+    <meta name="description" content="We build fast, custom websites for international brands. No templates, just unique digital experiences tailored to grow your business.">
+    <meta name="author" content="Vannia Rharbaoui Urbano">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/webp" href="img/icon-coodie.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Coodie Studio – The Simple The Better"> 
+    <meta property="og:description" content="Custom web design for growing businesses. Fast, responsive, and built to sell.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coodie.it/">
+    <meta property="og:image" content="https://coodie.it/img/coodie-logo-black.webp">
+    <link rel="apple-touch-icon" href="img/icon-coodie.webp">
+
+    <link rel="canonical" href="https://coodie.it/index.html">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="alternate" hreflang="en" href="https://coodie.it/index.html" />
+    <link rel="alternate" hreflang="x-default" href="https://coodie.it/index.html" />
+   
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://coodie.it/#website",
+              "url": "https://coodie.it/",
+              "name": "Coodie Studio",
+              "description": "We build fast, custom websites for international brands. No templates, just unique digital experiences tailored to grow your business.",
+              "inLanguage": "en",
+              "publisher": { "@id": "https://coodie.it/#organization" }
+            },
+            {
+              "@type": "ProfessionalService",
+              "@id": "https://coodie.it/#organization",
+              "name": "Coodie Studio",
+              "alternateName": "COODIE_STUDIO™",
+              "url": "https://coodie.it/",
+              "logo": "https://coodie.it/img/coodie-logo-black.webp",
+              "image": "https://coodie.it/img/coodie-logo-black.webp",
+              "description": "Independent web design and development studio. Custom-coded websites for brands that refuse to be average.",
+              "slogan": "The Simple The Better",
+              "priceRange": "$$",
+              "areaServed": "Worldwide",
+              "address": {
+                "@type": "PostalAddress",
+                "addressCountry": "IT"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "email": "coodie.studio@gmail.com",
+                "contactType": "customer service",
+                "availableLanguage": ["English", "Italian"]
+              },
+              "founder": { "@id": "https://coodie.it/#person" },
+              "sameAs": [
+                "https://www.instagram.com/coodie_studio/",
+                "https://www.tiktok.com/@coodie.studio"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Web Design & Development Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "One-Page Website",
+                      "url": "https://coodie.it/onepage.html"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Custom E-Commerce Website",
+                      "url": "https://coodie.it/ecommerce.html"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Multi-Page Website",
+                      "url": "https://coodie.it/multipage.html"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "@type": "Person",
+              "@id": "https://coodie.it/#person",
+              "name": "Vannia Rharbaoui Urbano",
+              "jobTitle": "Web Designer & Developer",
+              "worksFor": { "@id": "https://coodie.it/#organization" },
+              "url": "https://coodie.it/about.html",
+              "sameAs": [
+                "https://www.instagram.com/coodie_studio/",
+                "https://www.tiktok.com/@coodie.studio"
+              ]
+            }
+          ]
+        }
+        </script>
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <nav class="hero-nav">
+            <div class="nav-left">
+                <a href="works.html" class="nav-link">Work</a>
+            </div>
+            
+            <div class="nav-center">
+                <a href="/" class="logo-link">
+                    <img src="img/icon-coodie.webp" alt="coodie_studio logo" class="brand-logo" loading="lazy" width="800" height="600">
+                    </a>
+            </div>
+            
+                <div class="nav-right desktop-only">
+    
+                    <div class="services-dropdown">
+                        <span class="nav-link services-trigger">Services</span>
+                
+                        <div class="services-menu">
+                            <a href="onepage.html">One-Page Website</a>
+                            <a href="ecommerce.html">E-Commerce Website</a>
+                            <a href="multipage.html">Multi-Page Website</a>
+                        </div>
+                    </div>
+                
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <button class="hamburger mobile-only" id="menu-toggle" aria-label="Menu">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </button>
+        </nav>
+
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            
+            <nav class="mobile-nav-links">
+                <div class="sidebar-header">
+                    <span class="sidebar-logo">COODIE_STUDIO™</span>
+                    <button class="close-sidebar" id="close-btn" aria-label="Close menu">&#10005;</button>
+                </div>
+        
+                <div class="nav-links-wrapper">
+                    <a href="works.html">Work</a>
+
+                    <button class="mobile-services-trigger" id="mobile-services-btn" aria-expanded="false">
+                        Services <span class="mobile-services-arrow">&#8595;</span>
+                    </button>
+                    <div class="mobile-services-submenu" id="mobile-services-submenu" aria-hidden="true">
+                        <a href="onepage.html" target="_blank" rel="noopener">One-Page Website</a>
+                        <a href="ecommerce.html" target="_blank" rel="noopener">E-Commerce Website</a>
+                        <a href="multipage.html" target="_blank" rel="noopener">Multi-Page Website</a>
+                    </div>
+
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+        
+                <div class="sidebar-footer">
+                    <div class="system-status">
+                        <span class="pulse-dot"></span>
+                        <span>CURRENTLY AVAILABLE FOR NEW PROJECT</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="marquee-container" aria-hidden="true">
+            <div class="marquee-content" data-text="COODIE_STUDIO™">COODIE_STUDIO™ </div>
+        </div>
+
+        <div class="hero-bottom">
+            <div class="bottom-left">
+                <h2>We build websites.<br>That’s it.</h2>
+            </div>
+            <div class="bottom-right">
+                <a href="contact.html" class="btn-pill">Project Inquiries</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section border-top" id="about">
+        <div class="about-grid">
+            <div class="about-title-col">
+                <h2>THE<br>STANDARD_</h2>
+                <p>coodie_studio™ is an independent digital practice. We don't follow industry trends; we dictate them.</p>
+            </div>
+            
+            <div class="about-content-col">
+                <p class="long-desc">Forget bloated page builders and off-the-shelf templates. If you want average, look elsewhere. We engineer custom digital architectures from the ground up. Every pixel is intentional, every line of code is ruthlessly optimized for speed, aesthetics, and raw conversion power.</p>
+                
+                <div class="about-image-wrapper border-all border-dashed">
+                    <img src="img/Logo4.png" alt="Creative coding concept" class="monochrome-img" loading="lazy">
+                </div>
+                
+                <p class="short-desc">Flawless design meets brutal execution. We elevate your brand to a tier your competitors simply can't reach.</p>
+                
+                <a href="contact.html" class="btn-dashed">INITIATE PROJECT <span class="arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="works-section" id="work">
+        <div class="section-header">
+            <span class="section-label">01 — SELECTED_ARCHIVES</span>
+            <h2 class="section-title">PROVEN_IMPACT.</h2>
+        </div>
+    
+        <div class="works-grid">
+            <div class="work-item">
+                <div class="work-image-container">
+                    <img src="img/project1.jpg" alt="Project Discovery" class="work-img" loading="lazy" >
+                    <div class="work-overlay">
+                        <span class="work-category">Interior design</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>LOOMLINE</h3>
+                    <span class="work-year">2026</span>
+                </div>
+            </div>
+    
+            <div class="work-item">
+                <div class="work-image-container">
+                    <img src="img/project2.jpg" alt="Project Discovery" class="work-img"loading="lazy" >
+                    <div class="work-overlay">
+                        <span class="work-category">Cybersecurity</span>
+                    </div>
+                </div>
+                <div class="work-info">
+                    <h3>SIGNAL™</h3>
+                    <span class="work-year">2025</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="works-footer">
+            <a href="work.html" class="view-all">VIEW ALL CASE STUDIES <span class="arrow">→</span></a>
+        </div>
+    </section>
+
+    <section class="services-section" id="services">
+        <div class="services-header">
+            <span class="section-label">02 — CORE_CAPABILITIES</span>
+            <h2 class="section-title">THE_ARSENAL.</h2>
+            <p class="section-manifesto">We engineering your website from the ground up. Every pixel is intentional, every line of code is ruthlessly optimized for speed, aesthetics, and raw conversion power.</p>
+        </div>
+    
+        <div class="services-list-grid">
+            
+            <div class="service-item reveal-up">
+                <div class="service-meta">
+                    <span class="service-num">(01)</span>
+                    <a href="work.html" class="work-link">See Work <span class="arrow">↗</span></a>
+                </div>
+                <div class="service-info">
+                    <h3 class="service-name">ONE-PAGE WEBSITE</h3>
+                    <p class="service-desc">Atomic precision. Short, sweet, and powerful. Designed for those who don't need a thousand pages to command immediate attention and convert visitors instantly.</p>
+                </div>
+                <div class="service-footer">
+                    <a href="onepage.html" class="view-details">VIEW DETAILS <span>→</span></a>
+                </div>
+            </div>
+    
+            <div class="service-item reveal-up">
+                <div class="service-meta">
+                    <span class="service-num">(02)</span>
+                    <a href="work.html" class="work-link">See Work <span class="arrow">↗</span></a>
+                </div>
+                <div class="service-info">
+                    <h3 class="service-name">CUSTOM E-COMMERCE</h3>
+                    <p class="service-desc">High-octane commerce. Shopify stores that don't just look good: they dominate. We build the custom engine, you drive the sales and the ROI.</p>
+                </div>
+                <div class="service-footer">
+                    <a href="ecommerce.html" class="view-details">COMING SOON <span>→</span></a>
+                </div>
+            </div>
+    
+            <div class="service-item reveal-up">
+                <div class="service-meta">
+                    <span class="service-num">(03)</span>
+                    <a href="work.html" class="work-link">See Work <span class="arrow">↗</span></a>
+                </div>
+                <div class="service-info">
+                    <h3 class="service-name">MULTI-PAGE WEBSITE</h3>
+                    <p class="service-desc">Digital monuments. A complete, scalable ecosystem built for brands that need room to breathe and a flawless architecture to show the world their project.</p>
+                </div>
+                <div class="service-footer">
+                    <a href="multipage.html" class="view-details">COMING SOON <span>→</span></a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+
+    <section class="engine-contact" id="contact">
+        <div class="engine-container">
+            
+            <div class="engine-info">
+                <div class="sticky-info">
+                    <span class="status-indicator">● AVAILABLE FOR Q3 2026</span>
+                    <h2 class="engine-title">PROJECT<br>SPECIFICATION</h2>
+                    <p class="engine-lead">
+                        We don't "take orders." We engineer solutions. 
+                        Fill out the technical brief to initiate the audit.
+                    </p>
+                    <div class="contact-direct">
+                        <span class="label">[MAIL]</span>
+                        <a href="mailto:coodie.studio@gmail.com">coodie.studio@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="engine-form-wrapper">
+                <form class="raw-form" id="contact-form-system" action="https://formspree.io/f/xlgzpabb" method="POST">
+                    
+                    <div class="form-section">
+                        <span class="form-num">01. IDENTITY</span>
+                        <div class="input-group">
+                            <input type="text" name="name" placeholder="FULL NAME" required>
+                        </div>
+                    </div>
+    
+                    <div class="form-section">
+                        <span class="form-num">02. COMMUNICATION</span>
+                        <div class="input-group">
+                            <input type="email" name="email" placeholder="EMAIL ADDRESS" required>
+                        </div>
+                    </div>
+    
+                    <div class="form-section">
+                        <span class="form-num">03. SCOPE</span>
+                        <div class="select-wrapper">
+                            <select name="project-type" required>
+                                <option value="" disabled selected>NATURE OF PROJECT</option>
+                                <option value="arch">ONE-PAGE Website</option>
+                                <option value="eco">E-COMMERCE Website</option>
+                                <option value="custom">MULTI-PAGE Website</option>
+                            </select>
+                            <div class="custom-arrow">
+                                <svg width="10" height="6" viewBox="0 0 10 6"><path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" fill="none"/></svg>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="form-section">
+                        <span class="form-num">04. OBJECTIVE</span>
+                        <div class="input-group">
+                            <textarea name="message" rows="1" placeholder="DESCRIBE THE VISION" oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"></textarea>
+                        </div>
+                    </div>
+    
+                    <div class="form-footer">
+                        <button type="submit" class="transmit-btn">
+                            <span class="btn-text">TRANSMIT DATA</span>
+                            <span class="btn-icon">→</span>
+                        </button>
+                        <p id="form-status-contact" style="margin-top:1rem; font-size:0.8rem; font-weight:700; letter-spacing:0.1em;"></p>
+                    </div>
+    
+                </form>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer class="hyper-footer">
+        <div class="footer-top-line">
+            <div class="footer-nav-minimal">
+                <a href="works.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="mailto:coodie.studio@gmail.com">EMAIL</a>
+            </div>
+    
+            <div class="footer-center">
+                <h2 class="footer-brand-minimal">COODIE_STUDIO™</h2>
+            </div>
+    
+            <div class="footer-meta-minimal">
+                <div class="social-row">
+                    <a href="https://www.instagram.com/coodie_studio/">IG</a>
+                    <span>/</span>
+                    <a href="https://www.tiktok.com/@coodie.studio?is_from_webapp=1&sender_device=pc">TT</a>
+                </div>
+                <span id="live-clock" class="minimal-clock">00:00:00 CEST</span>
+            </div>
+        </div>
+    
+        <div class="footer-legal-line">
+            <p>Copyright © 2026 Coodie Studio. All rights reserved.</p>
+            <ul class="policies" role="list">
+                <li><a href="privacy.html" title="Read our privacy policy">Privacy Policy</a></li>
+                <li><a href="cookie.html" title="Read our cookie policy">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

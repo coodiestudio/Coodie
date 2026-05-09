@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Custom E-Commerce Website – Coodie Studio™</title>
+    <meta name="description" content="Coodie Studio builds custom Shopify stores engineered to convert. No themes, no shortcuts — just a high-performance e-commerce experience designed to maximise revenue and dominate your market.">
+    <meta name="author" content="Vannia Rharbaoui Urbano">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="custom shopify store, ecommerce web design, shopify developer, custom ecommerce website, coodie studio">
+
+    <link rel="icon" type="image/webp" href="img/icon-coodie.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Custom E-Commerce Website – Coodie Studio™">
+    <meta property="og:description" content="Shopify stores engineered to dominate. Custom UX flows, zero themes, maximum revenue.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coodie.it/ecommerce.html">
+    <meta property="og:image" content="https://coodie.it/img/coodie-logo-black.webp">
+    <link rel="apple-touch-icon" href="img/icon-coodie.webp">
+
+    <link rel="canonical" href="https://coodie.it/ecommerce.html">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="alternate" hreflang="en" href="https://coodie.it/ecommerce.html" />
+    <link rel="alternate" hreflang="x-default" href="https://coodie.it/ecommerce.html" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://coodie.it/ecommerce.html",
+              "url": "https://coodie.it/ecommerce.html",
+              "name": "Custom E-Commerce Website – Coodie Studio™",
+              "description": "Custom Shopify stores engineered to convert. No themes, no shortcuts — a high-performance e-commerce experience designed to maximise revenue.",
+              "inLanguage": "en",
+              "isPartOf": { "@id": "https://coodie.it/#website" }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://coodie.it/ecommerce.html#service",
+              "name": "Custom E-Commerce Website",
+              "serviceType": "E-Commerce Development",
+              "description": "High-octane Shopify stores that don't just look good: they dominate. Custom UX flows designed to reduce friction and maximise average order value.",
+              "provider": { "@id": "https://coodie.it/#organization" },
+              "areaServed": "Worldwide",
+              "url": "https://coodie.it/ecommerce.html",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@id": "https://coodie.it/#organization" }
+              }
+            }
+          ]
+        }
+        </script>
+</head>
+<body>
+
+    <header class="minimal-header">
+        <nav class="hero-nav">
+            <div class="nav-left">
+                <a href="works.html" class="nav-link">Work</a>
+            </div>
+            <div class="nav-center">
+                <a href="/" class="logo-link">
+                    <img src="img/icon-coodie.webp" alt="coodie_studio logo" class="brand-logo" loading="lazy" width="800" height="600">
+                </a>
+            </div>
+            <div class="nav-right desktop-only">
+                <div class="services-dropdown">
+                    <span class="nav-link services-trigger">Services</span>
+                    <div class="services-menu">
+                        <a href="onepage.html">One-Page Website</a>
+                        <a href="ecommerce.html">E-Commerce Website</a>
+                        <a href="multipage.html">Multi-Page Website</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger mobile-only" id="menu-toggle" aria-label="Menu">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </button>
+        </nav>
+
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            <nav class="mobile-nav-links">
+                <div class="sidebar-header">
+                    <span class="sidebar-logo">COODIE_STUDIO™</span>
+                    <button class="close-sidebar" id="close-btn" aria-label="Close menu">&#10005;</button>
+                </div>
+                <div class="nav-links-wrapper">
+                    <a href="works.html">Work</a>
+                    <button class="mobile-services-trigger" id="mobile-services-btn" aria-expanded="false">
+                        Services <span class="mobile-services-arrow">&#8595;</span>
+                    </button>
+                    <div class="mobile-services-submenu" id="mobile-services-submenu" aria-hidden="true">
+                        <a href="onepage.html" target="_blank" rel="noopener">One-Page Website</a>
+                        <a href="ecommerce.html" target="_blank" rel="noopener">E-Commerce Website</a>
+                        <a href="multipage.html" target="_blank" rel="noopener">Multi-Page Website</a>
+                    </div>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="system-status">
+                        <span class="pulse-dot"></span>
+                        <span>CURRENTLY AVAILABLE FOR NEW PROJECT</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ======= SERVICE HERO ======= -->
+        <section class="svc-hero">
+            <div class="svc-hero-inner">
+                <div class="svc-hero-left">
+                    <div class="svc-breadcrumb">
+                        <a href="/" class="svc-bread-link">Home</a>
+                        <span class="svc-bread-sep">/</span>
+                        <a href="#services" class="svc-bread-link">Services</a>
+                        <span class="svc-bread-sep">/</span>
+                        <span class="svc-bread-current">E-Commerce</span>
+                    </div>
+                    <span class="section-label">// SERVICE_02 — E-COMMERCE</span>
+                    <h1 class="svc-hero-title">E-<br>COMMERCE</h1>
+                    <p class="svc-hero-desc">
+                        High-octane commerce. A Shopify store that doesn't just look good — it dominates. We build the custom engine from scratch so you can focus on one thing: scaling revenue.
+                    </p>
+                    <div class="svc-hero-actions">
+                        <a href="contact.html" class="btn-solid-white svc-unavailable-cta">COMING SOON →</a>
+                        <a href="works.html" class="btn-dashed">SEE EXAMPLES <span class="arrow">↗</span></a>
+                    </div>
+                </div>
+                <div class="svc-hero-right">
+                    <div class="svc-hero-stat-block">
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">∞</span>
+                            <span class="svc-stat-label">Products,<br>no limits</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">100%</span>
+                            <span class="svc-stat-label">Custom Shopify<br>theme, no presets</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">~5w</span>
+                            <span class="svc-stat-label">Average<br>delivery time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNAVAILABILITY BANNER -->
+            <div class="svc-unavail-banner">
+                <div class="svc-unavail-inner">
+                    <span class="svc-unavail-dot">●</span>
+                    <span class="svc-unavail-text">THIS SERVICE IS CURRENTLY UNAVAILABLE — OPENING SOON</span>
+                    <a href="contact.html?subject=ecommerce-waitlist" class="svc-unavail-cta">JOIN THE WAITLIST →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= TICKER ======= -->
+        <div class="svc-ticker">
+            <div class="svc-ticker-track">
+                <span class="ticker-item">CUSTOM E-COMMERCE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SHOPIFY DEVELOPMENT</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ZERO THEMES</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM UX FLOWS</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CONVERSION RATE OPTIMIZATION</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">PRODUCT PAGE ENGINEERING</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">AOV MAXIMIZATION</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM E-COMMERCE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SHOPIFY DEVELOPMENT</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ZERO THEMES</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM UX FLOWS</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CONVERSION RATE OPTIMIZATION</span>
+                <span class="ticker-item accent">✦</span>
+            </div>
+        </div>
+
+        <!-- ======= WHAT IT IS ======= -->
+        <section class="svc-what">
+            <div class="svc-what-inner">
+                <div class="svc-what-label-col">
+                    <span class="manifesto-index">// 01</span>
+                    <span class="manifesto-tag">WHAT_IT_IS</span>
+                </div>
+                <div class="svc-what-text-col">
+                    <h2 class="svc-what-title">Your store.<br>Engineered to sell.<br><span class="dim">Not just to exist.</span></h2>
+                    <div class="svc-what-body">
+                        <p>Most e-commerce stores are built on bloated themes with compromised UX, slow load times, and generic layouts that look exactly like your competitor's. They convert at 1–2% because they're built to be deployed fast, not to sell hard.</p>
+                        <p>We take a different approach. Every Shopify store we build is a fully custom theme — written in Liquid, CSS, and JavaScript — engineered around a single objective: converting your specific audience into paying customers. Product pages, cart flows, upsell architecture, mobile experience — every layer is intentional.</p>
+                        <p>The result is a store that <strong>looks like no one else's, loads faster than everyone else's, and sells harder than anything you've run before.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= PRICING CARD ======= -->
+        <section class="svc-pricing">
+            <div class="svc-pricing-inner">
+
+                <div class="svc-pricing-header">
+                    <span class="section-label">// 02 — PACKAGE_SPEC</span>
+                    <h2 class="svc-pricing-title">THE<br>PACKAGE_</h2>
+                </div>
+<div class="svc-pricing-layout">
+
+                    <!-- MAIN PRICING CARD -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-name-row">
+                                <span class="pricing-card-name">CUSTOM<br>E-COMMERCE</span>
+                                <span class="pricing-card-badge">STANDARD</span>
+                            </div>
+                            <div class="pricing-price-block">
+                                <span class="pricing-from">Starting at</span>
+                                <div class="pricing-price-row">
+                                    <span class="pricing-currency">€</span>
+                                    <span class="pricing-amount">2,400</span>
+                                </div>
+                                <span class="pricing-note">One-time build fee. Shopify plan sold separately.</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// WHAT'S INCLUDED</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>100% Custom Shopify Theme</strong>
+                                        <p>Built in Liquid from scratch. No Dawn, no presets — a store that is entirely yours.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Conversion-Focused Product Pages</strong>
+                                        <p>Gallery, variant selectors, trust signals, urgency mechanics, upsell placements — all engineered for purchase intent.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Optimised Cart & Checkout Flow</strong>
+                                        <p>Frictionless cart experience with custom drawer, upsell logic, and streamlined checkout to reduce abandonment.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Up to 5 Page Templates</strong>
+                                        <p>Homepage, collection, product, about, contact — designed with intent and built for performance.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Mobile-First Responsive Design</strong>
+                                        <p>Over 70% of e-commerce traffic is mobile. We build mobile-first and scale up — not the other way around.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Product Upload (up to 30 SKUs)</strong>
+                                        <p>We handle the initial product catalogue setup — images, descriptions, variants, prices.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Speed & Core Web Vitals Optimisation</strong>
+                                        <p>Lazy loading, compressed assets, deferred scripts. Your store will score high on PageSpeed before launch.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>SEO Foundation</strong>
+                                        <p>Meta fields, canonical tags, structured data for products, sitemap.xml, robots.txt — all handled.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Payment & Shipping Configuration</strong>
+                                        <p>Stripe, PayPal, and Shopify Payments configured. Shipping zones, rates, and rules set up and tested.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>2 Rounds of Revisions</strong>
+                                        <p>Two focused review sessions — design and post-build — to make sure everything is exactly right.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>30-Day Post-Launch Support</strong>
+                                        <p>Bugs, tweaks, questions — we stay available for 30 days after your store goes live. No extra charge.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// OPTIONAL ADD-ONS</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Product Copywriting</strong>
+                                        <p>SEO-optimised product descriptions written to convert — not just to describe.</p>
+                                        <span class="addon-price">From €200</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Extended Product Catalogue</strong>
+                                        <p>Additional SKUs beyond the 30 included in the base package.</p>
+                                        <span class="addon-price">€4 / SKU</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Email Marketing Integration</strong>
+                                        <p>Klaviyo or Mailchimp setup: welcome flow, abandoned cart, post-purchase sequence.</p>
+                                        <span class="addon-price">From €350</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Multilingual Store (EN + IT)</strong>
+                                        <p>Full bilingual store with Shopify Markets configuration and translated content.</p>
+                                        <span class="addon-price">From €400</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Analytics & Tracking Setup</strong>
+                                        <p>GA4, Meta Pixel, conversion tracking, and a custom dashboard to monitor what matters.</p>
+                                        <span class="addon-price">€180 one-time</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-card-footer">
+                            <form class="waitlist-form" action="https://formspree.io/f/xlgzpabb" method="POST">
+                                <input type="hidden" name="service" value="E-Commerce Website">
+                                <div class="waitlist-form-row">
+                                    <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required class="waitlist-input">
+                                    <button type="submit" class="pricing-cta-btn">
+                                        JOIN WAITLIST <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                                <p class="pricing-cta-note">We'll notify you as soon as this service opens — no spam, just one email.</p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR SPECS -->
+                    <div class="pricing-sidebar">
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TIMELINE</span>
+                            <div class="psidebar-timeline">
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 1–2</span>
+                                    <span class="tl-event">Brief & Onboarding</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 3–7</span>
+                                    <span class="tl-event">Design Mockup</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 8–25</span>
+                                    <span class="tl-event">Full Build</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 26–30</span>
+                                    <span class="tl-event">QA & Revisions</span>
+                                </div>
+                                <div class="timeline-step tl-last">
+                                    <span class="tl-day">Day 31–35</span>
+                                    <span class="tl-event tl-accent">Live ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TECH STACK</span>
+                            <div class="psidebar-tags">
+                                <span class="pstag">Shopify</span>
+                                <span class="pstag">Liquid</span>
+                                <span class="pstag">CSS3</span>
+                                <span class="pstag">Vanilla JS</span>
+                                <span class="pstag">Shopify Markets</span>
+                                <span class="pstag">Schema.org</span>
+                                <span class="pstag">GA4</span>
+                                <span class="pstag">Meta Pixel</span>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// BEST FOR</span>
+                            <ul class="psidebar-list">
+                                <li>D2C product brands</li>
+                                <li>Fashion & lifestyle labels</li>
+                                <li>Beauty & skincare companies</li>
+                                <li>Brands migrating from Etsy or WooCommerce</li>
+                                <li>Anyone who needs to sell seriously online</li>
+                            </ul>
+                        </div>
+
+                        <div class="psidebar-block psidebar-status">
+                            <span class="psidebar-label">// AVAILABILITY</span>
+                            <span class="svc-status-badge svc-status-unavail">● NOT YET AVAILABLE</span>
+                            <p class="psidebar-avail-note">We're finalising the e-commerce offering. Join the waitlist now to secure priority access when we open.</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= HOW IT WORKS ======= -->
+        <section class="svc-process">
+            <div class="svc-process-inner">
+                <div class="svc-process-header">
+                    <span class="section-label">// 03 — THE_PROCESS</span>
+                    <h2 class="svc-process-title">HOW WE<br>WORK_</h2>
+                </div>
+                <div class="svc-process-steps">
+                    <div class="svc-step">
+                        <span class="svc-step-num">01_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Strategy</h3>
+                            <p class="svc-step-desc">We audit your product, your audience, and your competitors. We map out the customer journey before touching a single design file. Clarity first, execution second.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">02_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Design</h3>
+                            <p class="svc-step-desc">High-fidelity mockups of every key template — homepage, product page, collection, cart. Designed for conversion, not decoration. One revision round before build.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">03_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Build</h3>
+                            <p class="svc-step-desc">Custom Liquid theme built from zero. Product setup, payment config, shipping rules, speed optimisation. Tested end-to-end before you see a single screen.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">04_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Launch</h3>
+                            <p class="svc-step-desc">We go live with you. DNS, domain, SSL — handled. 30 days of post-launch support included. You start selling. We stay available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= FAQ ======= -->
+        <section class="svc-faq">
+            <div class="svc-faq-inner">
+                <div class="svc-faq-header">
+                    <span class="section-label">// 04 — FAQ</span>
+                    <h2 class="svc-faq-title">COMMON<br>QUESTIONS_</h2>
+                </div>
+                <div class="svc-faq-list">
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Do I need an existing Shopify plan?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>You'll need a Shopify subscription (Basic or above) to run the store. We don't include the monthly Shopify fee in our quote — that's between you and Shopify. We do handle the full setup and configuration of your account as part of the project.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Can I manage the store myself after delivery?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>Absolutely. Shopify is designed for non-developers to manage day-to-day. Adding products, editing prices, running discounts — all of that is simple through the Shopify admin. We also provide a brief handoff walkthrough so you're confident from day one.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>What if I already have a Shopify store I want redesigned?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>No problem — this is actually a common brief. We audit your current store, migrate your products and data, build the new custom theme on a development store, and swap it live with zero downtime. Your existing orders and customer data are untouched.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Do you work with physical products only?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>No. Shopify supports digital products, subscriptions, and services equally well. If you're selling digital downloads, memberships, or booking-based services, we can engineer the right flow for that too.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>When will this service be available?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>We're currently finalising the e-commerce offering and expect to open slots in 2027. Join the waitlist via the contact page and you'll be the first to know — with priority access before it goes public.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>How does payment work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>50% upfront at project start, 50% before the store goes live. Bank transfer or PayPal. A signed project agreement is required before any work begins.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= OTHER SERVICES ======= -->
+        <section class="svc-other-services">
+            <div class="svc-other-inner">
+                <span class="section-label">// 05 — OTHER_SERVICES</span>
+                <h2 class="svc-other-title">ALSO<br>AVAILABLE_</h2>
+                <div class="svc-other-grid">
+                    <a href="onepage.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(01)</span>
+                            <span class="svc-other-status svc-status-live">AVAILABLE NOW</span>
+                        </div>
+                        <h3 class="svc-other-name">ONE-PAGE<br>WEBSITE</h3>
+                        <p class="svc-other-desc">Atomic precision. One scroll, one mission. Built for brands that need to command attention and convert it instantly.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                    <a href="multipage.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(03)</span>
+                            <span class="svc-other-status svc-status-soon">COMING SOON</span>
+                        </div>
+                        <h3 class="svc-other-name">MULTI-PAGE<br>WEBSITE</h3>
+                        <p class="svc-other-desc">A complete scalable ecosystem for brands that need room to grow and a flawless architecture to show the world their project.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CTA CLOSER ======= -->
+        <section class="about-cta-closer">
+            <span class="cta-closer-label">// STAY IN THE LOOP</span>
+            <h2 class="cta-closer-title">JOIN THE<br>WAITLIST_</h2>
+            <div class="cta-closer-actions">
+                <a href="contact.html" class="btn-solid-white">JOIN THE WAITLIST →</a>
+                <a href="onepage.html" class="btn-dashed">EXPLORE ONE-PAGE <span class="arrow">↗</span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="hyper-footer">
+        <div class="footer-top-line">
+            <div class="footer-nav-minimal">
+                <a href="works.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="mailto:coodie.studio@gmail.com">EMAIL</a>
+            </div>
+            <div class="footer-center">
+                <h2 class="footer-brand-minimal">COODIE_STUDIO™</h2>
+            </div>
+            <div class="footer-meta-minimal">
+                <div class="social-row">
+                    <a href="https://www.instagram.com/coodie_studio/">IG</a>
+                    <span>/</span>
+                    <a href="https://www.tiktok.com/@coodie.studio?is_from_webapp=1&sender_device=pc">TT</a>
+                </div>
+                <span id="live-clock" class="minimal-clock">00:00:00 CEST</span>
+            </div>
+        </div>
+        <div class="footer-legal-line">
+            <p>Copyright © 2026 Coodie Studio. All rights reserved.</p>
+            <ul class="policies" role="list">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookie.html">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Multi-Page Website – Coodie Studio™</title>
+    <meta name="description" content="Coodie Studio builds custom multi-page websites — complete digital ecosystems engineered for brands that need scalable architecture, deep content, and a presence that commands authority.">
+    <meta name="author" content="Vannia Rharbaoui Urbano">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="multi page website design, custom website development, corporate website design, brand website, coodie studio">
+
+    <link rel="icon" type="image/webp" href="img/icon-coodie.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="Multi-Page Website – Coodie Studio™">
+    <meta property="og:description" content="A complete digital ecosystem for brands that need room to grow. Custom-built, zero templates, engineered for authority.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coodie.it/multipage.html">
+    <meta property="og:image" content="https://coodie.it/img/coodie-logo-black.webp">
+    <link rel="apple-touch-icon" href="img/icon-coodie.webp">
+
+    <link rel="canonical" href="https://coodie.it/multipage.html">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="alternate" hreflang="en" href="https://coodie.it/multipage.html" />
+    <link rel="alternate" hreflang="x-default" href="https://coodie.it/multipage.html" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://coodie.it/multipage.html",
+              "url": "https://coodie.it/multipage.html",
+              "name": "Multi-Page Website – Coodie Studio™",
+              "description": "Custom multi-page websites — complete digital ecosystems engineered for brands that need scalable architecture, deep content, and a presence that commands authority.",
+              "inLanguage": "en",
+              "isPartOf": { "@id": "https://coodie.it/#website" }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://coodie.it/multipage.html#service",
+              "name": "Multi-Page Website",
+              "serviceType": "Web Design & Development",
+              "description": "Digital monuments. A complete, scalable ecosystem built for brands that need room to breathe and a flawless architecture to show the world their project.",
+              "provider": { "@id": "https://coodie.it/#organization" },
+              "areaServed": "Worldwide",
+              "url": "https://coodie.it/multipage.html",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@id": "https://coodie.it/#organization" }
+              }
+            }
+          ]
+        }
+        </script>
+</head>
+<body>
+
+    <header class="minimal-header">
+        <nav class="hero-nav">
+            <div class="nav-left">
+                <a href="works.html" class="nav-link">Work</a>
+            </div>
+            <div class="nav-center">
+                <a href="/" class="logo-link">
+                    <img src="img/icon-coodie.webp" alt="coodie_studio logo" class="brand-logo" loading="lazy" width="800" height="600">
+                </a>
+            </div>
+            <div class="nav-right desktop-only">
+                <div class="services-dropdown">
+                    <span class="nav-link services-trigger">Services</span>
+                    <div class="services-menu">
+                        <a href="onepage.html">One-Page Website</a>
+                        <a href="ecommerce.html">E-Commerce Website</a>
+                        <a href="multipage.html">Multi-Page Website</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger mobile-only" id="menu-toggle" aria-label="Menu">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </button>
+        </nav>
+
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            <nav class="mobile-nav-links">
+                <div class="sidebar-header">
+                    <span class="sidebar-logo">COODIE_STUDIO™</span>
+                    <button class="close-sidebar" id="close-btn" aria-label="Close menu">&#10005;</button>
+                </div>
+                <div class="nav-links-wrapper">
+                    <a href="works.html">Work</a>
+                    <button class="mobile-services-trigger" id="mobile-services-btn" aria-expanded="false">
+                        Services <span class="mobile-services-arrow">&#8595;</span>
+                    </button>
+                    <div class="mobile-services-submenu" id="mobile-services-submenu" aria-hidden="true">
+                        <a href="onepage.html" target="_blank" rel="noopener">One-Page Website</a>
+                        <a href="ecommerce.html" target="_blank" rel="noopener">E-Commerce Website</a>
+                        <a href="multipage.html" target="_blank" rel="noopener">Multi-Page Website</a>
+                    </div>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="system-status">
+                        <span class="pulse-dot"></span>
+                        <span>CURRENTLY AVAILABLE FOR NEW PROJECT</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ======= SERVICE HERO ======= -->
+        <section class="svc-hero">
+            <div class="svc-hero-inner">
+                <div class="svc-hero-left">
+                    <div class="svc-breadcrumb">
+                        <a href="/" class="svc-bread-link">Home</a>
+                        <span class="svc-bread-sep">/</span>
+                        <a href="#services" class="svc-bread-link">Services</a>
+                        <span class="svc-bread-sep">/</span>
+                        <span class="svc-bread-current">Multi-Page</span>
+                    </div>
+                    <span class="section-label">// SERVICE_03 — MULTI-PAGE</span>
+                    <h1 class="svc-hero-title">MULTI-PAGE<br>WEBSITE_</h1>
+                    <p class="svc-hero-desc">
+                        Digital monuments. A complete, scalable website ecosystem for brands that have more to say, more to show, and a bigger stage to own. Built to last and to grow.
+                    </p>
+                    <div class="svc-hero-actions">
+                        <a href="contact.html" class="btn-solid-white svc-unavailable-cta">COMING SOON →</a>
+                        <a href="works.html" class="btn-dashed">SEE EXAMPLES <span class="arrow">↗</span></a>
+                    </div>
+                </div>
+                <div class="svc-hero-right">
+                    <div class="svc-hero-stat-block">
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">8+</span>
+                            <span class="svc-stat-label">Custom page<br>templates</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">100%</span>
+                            <span class="svc-stat-label">Scalable<br>architecture</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">~7w</span>
+                            <span class="svc-stat-label">Average<br>delivery time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- UNAVAILABILITY BANNER -->
+            <div class="svc-unavail-banner">
+                <div class="svc-unavail-inner">
+                    <span class="svc-unavail-dot">●</span>
+                    <span class="svc-unavail-text">THIS SERVICE IS CURRENTLY UNAVAILABLE — OPENING SOON</span>
+                    <a href="contact.html?subject=multipage-waitlist" class="svc-unavail-cta">JOIN THE WAITLIST →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= TICKER ======= -->
+        <div class="svc-ticker">
+            <div class="svc-ticker-track">
+                <span class="ticker-item">MULTI-PAGE WEBSITE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SCALABLE ARCHITECTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM CMS INTEGRATION</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SEO INFRASTRUCTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">BRAND AUTHORITY</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">PERFORMANCE ENGINEERING</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ZERO TEMPLATES</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">MULTI-PAGE WEBSITE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SCALABLE ARCHITECTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM CMS INTEGRATION</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SEO INFRASTRUCTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">BRAND AUTHORITY</span>
+                <span class="ticker-item accent">✦</span>
+            </div>
+        </div>
+
+        <!-- ======= WHAT IT IS ======= -->
+        <section class="svc-what">
+            <div class="svc-what-inner">
+                <div class="svc-what-label-col">
+                    <span class="manifesto-index">// 01</span>
+                    <span class="manifesto-tag">WHAT_IT_IS</span>
+                </div>
+                <div class="svc-what-text-col">
+                    <h2 class="svc-what-title">A website<br>that grows<br><span class="dim">with your brand.</span></h2>
+                    <div class="svc-what-body">
+                        <p>A one-page site is a precision instrument. A multi-page website is an entire infrastructure. It's the right tool when your brand has depth — multiple services, a portfolio to showcase, a story to tell across chapters, or an audience that needs to be educated before they convert.</p>
+                        <p>We design and build every page as a standalone experience that also functions as part of a coherent whole. Navigation architecture, internal linking strategy, page hierarchy, content flow — everything is engineered before a pixel is placed. The result is a website that ranks, converts, and scales without ever needing to be thrown away and rebuilt.</p>
+                        <p>Built for: <strong>agencies, studios, professional service firms, growing brands, and anyone whose business has evolved beyond a single scroll.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= PRICING CARD ======= -->
+        <section class="svc-pricing">
+            <div class="svc-pricing-inner">
+
+                <div class="svc-pricing-header">
+                    <span class="section-label">// 02 — PACKAGE_SPEC</span>
+                    <h2 class="svc-pricing-title">THE<br>PACKAGE_</h2>
+                </div>
+<div class="svc-pricing-layout">
+
+                    <!-- MAIN PRICING CARD -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-name-row">
+                                <span class="pricing-card-name">MULTI-PAGE<br>WEBSITE</span>
+                                <span class="pricing-card-badge">STANDARD</span>
+                            </div>
+                            <div class="pricing-price-block">
+                                <span class="pricing-from">Starting at</span>
+                                <div class="pricing-price-row">
+                                    <span class="pricing-currency">€</span>
+                                    <span class="pricing-amount">3,200</span>
+                                </div>
+                                <span class="pricing-note">One-time build fee. No recurring costs from us.</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// WHAT'S INCLUDED</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Up to 8 Custom Page Templates</strong>
+                                        <p>Homepage, about, services (or work), individual service/project pages, blog index, contact — every page designed and built to purpose.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Custom HTML / CSS / JS Architecture</strong>
+                                        <p>A clean, modular codebase designed to grow. New pages can be added without touching the foundation.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Navigation Architecture</strong>
+                                        <p>Primary and secondary navigation designed for clarity. Mega menus, dropdowns, sticky headers — whatever the site demands.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Full SEO Infrastructure</strong>
+                                        <p>Page-by-page meta strategy, canonical structure, internal linking architecture, sitemap, structured data. Built to rank from day one.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>CMS Integration (optional)</strong>
+                                        <p>If you need to self-manage blog posts or team pages, we integrate a headless CMS (Contentful, Sanity, or similar) with a clean editorial interface.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Fully Responsive — All Devices</strong>
+                                        <p>Mobile, tablet, desktop, large screens. Tested across Chrome, Safari, Firefox, and Edge. Nothing breaks.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Contact & Lead Capture Forms</strong>
+                                        <p>Multiple forms across pages — contact, service inquiry, newsletter — all configured and tested end-to-end.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Performance Optimisation</strong>
+                                        <p>Target: 90+ PageSpeed score. Lazy loading, critical CSS, asset compression, preloads — done before launch.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Brand Design System</strong>
+                                        <p>A documented set of design tokens — colours, typography, spacing, components — so every future page stays consistent.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>2 Rounds of Revisions</strong>
+                                        <p>One at design stage, one post-build. Focused, structured, efficient. You know what you're getting before we build it.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Deployment & 30-Day Support</strong>
+                                        <p>Full deployment on your chosen host. 30 days of post-launch support included. Zero handoff anxiety.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// OPTIONAL ADD-ONS</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Full Copywriting</strong>
+                                        <p>Every page written from scratch by us — structured for SEO and conversion, not just to fill space.</p>
+                                        <span class="addon-price">From €500</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Additional Page Templates</strong>
+                                        <p>Beyond the 8 included in the base package.</p>
+                                        <span class="addon-price">€150 / page</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Blog / Editorial System</strong>
+                                        <p>A fully designed and functional blog with category filtering, author profiles, and RSS feed.</p>
+                                        <span class="addon-price">From €400</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Multilingual (EN + IT)</strong>
+                                        <p>Full bilingual version with language switcher and separate URL structure for international SEO.</p>
+                                        <span class="addon-price">From €600</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Analytics & Heatmap Setup</strong>
+                                        <p>GA4 + Hotjar (or Microsoft Clarity) configured and tested. Know exactly how your visitors behave.</p>
+                                        <span class="addon-price">€180 one-time</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-card-footer">
+                            <form class="waitlist-form" action="https://formspree.io/f/xlgzpabb" method="POST">
+                                <input type="hidden" name="service" value="Multi-Page Website">
+                                <div class="waitlist-form-row">
+                                    <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" required class="waitlist-input">
+                                    <button type="submit" class="pricing-cta-btn">
+                                        JOIN WAITLIST <span class="arrow">→</span>
+                                    </button>
+                                </div>
+                                <p class="pricing-cta-note">We'll notify you as soon as this service opens — no spam, just one email.</p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR SPECS -->
+                    <div class="pricing-sidebar">
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TIMELINE</span>
+                            <div class="psidebar-timeline">
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 1–3</span>
+                                    <span class="tl-event">Brief & Strategy</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 4–10</span>
+                                    <span class="tl-event">Design System</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 11–14</span>
+                                    <span class="tl-event">Page Mockups</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 15–38</span>
+                                    <span class="tl-event">Full Build</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 39–44</span>
+                                    <span class="tl-event">QA & Revisions</span>
+                                </div>
+                                <div class="timeline-step tl-last">
+                                    <span class="tl-day">Day 45–49</span>
+                                    <span class="tl-event tl-accent">Live ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TECH STACK</span>
+                            <div class="psidebar-tags">
+                                <span class="pstag">HTML5</span>
+                                <span class="pstag">CSS3</span>
+                                <span class="pstag">Vanilla JS</span>
+                                <span class="pstag">Contentful / Sanity</span>
+                                <span class="pstag">Schema.org</span>
+                                <span class="pstag">GA4</span>
+                                <span class="pstag">Open Graph</span>
+                                <span class="pstag">Git Handoff</span>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// BEST FOR</span>
+                            <ul class="psidebar-list">
+                                <li>Creative agencies & studios</li>
+                                <li>Professional service firms</li>
+                                <li>Consulting & coaching businesses</li>
+                                <li>Brands with multiple products or services</li>
+                                <li>Any business serious about organic SEO</li>
+                            </ul>
+                        </div>
+
+                        <div class="psidebar-block psidebar-status">
+                            <span class="psidebar-label">// AVAILABILITY</span>
+                            <span class="svc-status-badge svc-status-unavail">● NOT YET AVAILABLE</span>
+                            <p class="psidebar-avail-note">This service is in preparation. Get on the waitlist now for priority access and early-bird pricing when we open.</p>
+                            
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= HOW IT WORKS ======= -->
+        <section class="svc-process">
+            <div class="svc-process-inner">
+                <div class="svc-process-header">
+                    <span class="section-label">// 03 — THE_PROCESS</span>
+                    <h2 class="svc-process-title">HOW WE<br>WORK_</h2>
+                </div>
+                <div class="svc-process-steps">
+                    <div class="svc-step">
+                        <span class="svc-step-num">01_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Architecture</h3>
+                            <p class="svc-step-desc">We map the entire site before anything else — page hierarchy, navigation logic, URL structure, content inventory. The blueprint exists on paper before it exists in code.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">02_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Design System</h3>
+                            <p class="svc-step-desc">We build a complete design system first — tokens, components, grid, typography — so every page feels like it belongs to the same universe. Then we design each page template.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">03_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Build</h3>
+                            <p class="svc-step-desc">Modular, semantic, scalable code. Every component reusable. Every page independently testable. Performance and accessibility baked in from the first commit.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">04_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Handoff</h3>
+                            <p class="svc-step-desc">Full source code, design system documentation, deployment guide, and a 30-minute walkthrough. You own the site completely. Adding pages later is straightforward — by design.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= FAQ ======= -->
+        <section class="svc-faq">
+            <div class="svc-faq-inner">
+                <div class="svc-faq-header">
+                    <span class="section-label">// 04 — FAQ</span>
+                    <h2 class="svc-faq-title">COMMON<br>QUESTIONS_</h2>
+                </div>
+                <div class="svc-faq-list">
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>What's the difference between this and a one-page site?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>A one-page site is a single scroll — fast, focused, one objective. A multi-page site is a complete ecosystem: separate URLs for each service, SEO-optimised individual pages, blog infrastructure, deeper content. Choose multi-page when your brand has complexity that deserves its own space.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Can I add more pages myself after delivery?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>Yes — that's a core design principle of how we build. The codebase is modular and documented. If you're comfortable with HTML, duplicating a page template and editing content is straightforward. If you'd prefer we handle it, future page additions are available at the per-page rate.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Do I need a CMS, or can I update content myself?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>For static content (service descriptions, team bios, portfolio items), you don't need a CMS — editing the HTML directly is sufficient for most clients. If you need to publish blog posts or manage a news section regularly, we integrate a headless CMS that gives you a clean editorial interface without touching code.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>How important is the SEO infrastructure for a multi-page site?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>It's the whole point of building multi-page over single-page. Each page is an independent URL that can rank for its own keyword cluster. The internal linking structure, page hierarchy, and structured data we implement from day one give you a compounding SEO advantage that a one-pager simply can't match.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>When will this service be available?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>We expect to open multi-page project slots in 2027. The waitlist is already open — join now to get priority access and be considered for early-bird pricing before the public launch.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>How does payment work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>For larger projects like this, we work on a 3-stage structure: 40% at project start, 30% at design approval, 30% at launch. Bank transfer or PayPal. A signed project agreement is required before work begins.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= OTHER SERVICES ======= -->
+        <section class="svc-other-services">
+            <div class="svc-other-inner">
+                <span class="section-label">// 05 — OTHER_SERVICES</span>
+                <h2 class="svc-other-title">ALSO<br>AVAILABLE_</h2>
+                <div class="svc-other-grid">
+                    <a href="onepage.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(01)</span>
+                            <span class="svc-other-status svc-status-live">AVAILABLE NOW</span>
+                        </div>
+                        <h3 class="svc-other-name">ONE-PAGE<br>WEBSITE</h3>
+                        <p class="svc-other-desc">Atomic precision. One scroll, one mission. Built for brands that need to command attention and convert it instantly.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                    <a href="ecommerce.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(02)</span>
+                            <span class="svc-other-status svc-status-soon">COMING SOON</span>
+                        </div>
+                        <h3 class="svc-other-name">CUSTOM<br>E-COMMERCE</h3>
+                        <p class="svc-other-desc">Shopify stores engineered to dominate. Custom UX flows designed to maximise conversions and average order value.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CTA CLOSER ======= -->
+        <section class="about-cta-closer">
+            <span class="cta-closer-label">// STAY IN THE LOOP</span>
+            <h2 class="cta-closer-title">JOIN THE<br>WAITLIST_</h2>
+            <div class="cta-closer-actions">
+                <a href="contact.html" class="btn-solid-white">JOIN THE WAITLIST →</a>
+                <a href="onepage.html" class="btn-dashed">EXPLORE ONE-PAGE <span class="arrow">↗</span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="hyper-footer">
+        <div class="footer-top-line">
+            <div class="footer-nav-minimal">
+                <a href="works.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="mailto:coodie.studio@gmail.com">EMAIL</a>
+            </div>
+            <div class="footer-center">
+                <h2 class="footer-brand-minimal">COODIE_STUDIO™</h2>
+            </div>
+            <div class="footer-meta-minimal">
+                <div class="social-row">
+                    <a href="https://www.instagram.com/coodie_studio/">IG</a>
+                    <span>/</span>
+                    <a href="https://www.tiktok.com/@coodie.studio?is_from_webapp=1&sender_device=pc">TT</a>
+                </div>
+                <span id="live-clock" class="minimal-clock">00:00:00 CEST</span>
+            </div>
+        </div>
+        <div class="footer-legal-line">
+            <p>Copyright © 2026 Coodie Studio. All rights reserved.</p>
+            <ul class="policies" role="list">
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="cookie.html">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

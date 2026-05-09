@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>One-Page Website – Coodie Studio™</title>
+    <meta name="description" content="Coodie Studio's One-Page Website service: a precision-engineered single-page experience that converts visitors into clients. Custom code, zero templates, built to dominate.">
+    <meta name="author" content="Vannia Rharbaoui Urbano">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="one page website design, single page website, landing page development, custom web design, coodie studio">
+
+    <link rel="icon" type="image/webp" href="img/icon-coodie.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta property="og:title" content="One-Page Website – Coodie Studio™">
+    <meta property="og:description" content="A single page. Maximum impact. Custom-coded by Coodie Studio for brands that need to convert fast.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://coodie.it/onepage.html">
+    <meta property="og:image" content="https://coodie.it/img/coodie-logo-black.webp">
+    <link rel="apple-touch-icon" href="img/icon-coodie.webp">
+
+    <link rel="canonical" href="https://coodie.it/onepage.html">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="alternate" hreflang="en" href="https://coodie.it/onepage.html" />
+    <link rel="alternate" hreflang="x-default" href="https://coodie.it/onepage.html" />
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://coodie.it/onepage.html",
+              "url": "https://coodie.it/onepage.html",
+              "name": "One-Page Website – Coodie Studio™",
+              "description": "A precision-engineered single-page experience that converts visitors into clients. Custom code, zero templates, built to dominate.",
+              "inLanguage": "en",
+              "isPartOf": { "@id": "https://coodie.it/#website" }
+            },
+            {
+              "@type": "Service",
+              "@id": "https://coodie.it/onepage.html#service",
+              "name": "One-Page Website",
+              "serviceType": "Web Design & Development",
+              "description": "Atomic precision. One page, one mission, zero friction. Designed for founders, creatives, and brands that need to command attention and convert it the moment someone lands.",
+              "provider": { "@id": "https://coodie.it/#organization" },
+              "areaServed": "Worldwide",
+              "url": "https://coodie.it/onepage.html",
+              "offers": {
+                "@type": "Offer",
+                "priceCurrency": "EUR",
+                "availability": "https://schema.org/InStock",
+                "seller": { "@id": "https://coodie.it/#organization" }
+              }
+            },
+            {
+              "@type": "FAQPage",
+              "@id": "https://coodie.it/onepage.html#faq",
+              "mainEntity": [
+                {
+                  "@type": "Question",
+                  "name": "How long does a one-page website take to build?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Average delivery time is approximately 3 weeks from brief sign-off to launch."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Is the website built with templates?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Every website is 100% custom-coded from scratch. No page builders, no templates, no bloated frameworks."
+                  }
+                },
+                {
+                  "@type": "Question",
+                  "name": "Will the site be mobile responsive?",
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. Every site is fully responsive and tested across all major browsers and devices before handoff."
+                  }
+                }
+              ]
+            }
+          ]
+        }
+        </script>
+         
+         
+</head>
+<body>
+
+    <!-- ======= HEADER / NAV ======= -->
+    <header class="minimal-header">
+        <nav class="hero-nav">
+            <div class="nav-left">
+                <a href="works.html" class="nav-link">Work</a>
+            </div>
+            <div class="nav-center">
+                <a href="/" class="logo-link">
+                    <img src="img/icon-coodie.webp" alt="coodie_studio logo" class="brand-logo" loading="lazy" width="800" height="600">
+                </a>
+            </div>
+            <div class="nav-right desktop-only">
+                <div class="services-dropdown">
+                    <span class="nav-link services-trigger">Services</span>
+                    <div class="services-menu">
+                        <a href="onepage.html">One-Page Website</a>
+                        <a href="ecommerce.html">E-Commerce Website</a>
+                        <a href="multipage.html">Multi-Page Website</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <button class="hamburger mobile-only" id="menu-toggle" aria-label="Menu">
+                <div class="hamburger-lines">
+                    <span class="line line-top"></span>
+                    <span class="line line-bottom"></span>
+                </div>
+            </button>
+        </nav>
+
+        <div class="mobile-menu-overlay" id="mobile-menu">
+            <div class="menu-backdrop" id="menu-backdrop"></div>
+            <nav class="mobile-nav-links">
+                <div class="sidebar-header">
+                    <span class="sidebar-logo">COODIE_STUDIO™</span>
+                    <button class="close-sidebar" id="close-btn" aria-label="Close menu">&#10005;</button>
+                </div>
+                <div class="nav-links-wrapper">
+                    <a href="works.html">Work</a>
+                    <button class="mobile-services-trigger" id="mobile-services-btn" aria-expanded="false">
+                        Services <span class="mobile-services-arrow">&#8595;</span>
+                    </button>
+                    <div class="mobile-services-submenu" id="mobile-services-submenu" aria-hidden="true">
+                        <a href="onepage.html" target="_blank" rel="noopener">One-Page Website</a>
+                        <a href="ecommerce.html" target="_blank" rel="noopener">E-Commerce Website</a>
+                        <a href="multipage.html" target="_blank" rel="noopener">Multi-Page Website</a>
+                    </div>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="sidebar-footer">
+                    <div class="system-status">
+                        <span class="pulse-dot"></span>
+                        <span>CURRENTLY AVAILABLE FOR NEW PROJECT</span>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ======= SERVICE HERO ======= -->
+        <section class="svc-hero">
+            <div class="svc-hero-inner">
+                <div class="svc-hero-left">
+                    <div class="svc-breadcrumb">
+                        <a href="/" class="svc-bread-link">Home</a>
+                        <span class="svc-bread-sep">/</span>
+                        <a href="#services" class="svc-bread-link">Services</a>
+                        <span class="svc-bread-sep">/</span>
+                        <span class="svc-bread-current">One-Page</span>
+                    </div>
+                    <span class="section-label">// SERVICE_01 — ONE-PAGE</span>
+                    <h1 class="svc-hero-title">ONE-PAGE<br>WEBSITE_</h1>
+                    <p class="svc-hero-desc">
+                        Atomic precision. One page, one mission, zero friction. Designed for founders, creatives, and brands that need to command attention — and convert it — the moment someone lands.
+                    </p>
+                    <div class="svc-hero-actions">
+                        <a href="contact.html" class="btn-solid-white">START THIS PROJECT →</a>
+                        <a href="works.html" class="btn-dashed">SEE EXAMPLES <span class="arrow">↗</span></a>
+                    </div>
+                </div>
+                <div class="svc-hero-right">
+                    <div class="svc-hero-stat-block">
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">01</span>
+                            <span class="svc-stat-label">Single scroll<br>experience</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">100%</span>
+                            <span class="svc-stat-label">Custom code,<br>no templates</span>
+                        </div>
+                        <div class="svc-stat">
+                            <span class="svc-stat-num">~3w</span>
+                            <span class="svc-stat-label">Average<br>delivery time</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= TICKER ======= -->
+        <div class="svc-ticker">
+            <div class="svc-ticker-track">
+                <span class="ticker-item">ONE-PAGE WEBSITE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM CODE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ZERO TEMPLATES</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">RESPONSIVE DESIGN</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CONVERSION ARCHITECTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SEO OPTIMIZED</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">FAST DELIVERY</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ONE-PAGE WEBSITE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CUSTOM CODE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">ZERO TEMPLATES</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">RESPONSIVE DESIGN</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">CONVERSION ARCHITECTURE</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">SEO OPTIMIZED</span>
+                <span class="ticker-item accent">✦</span>
+                <span class="ticker-item">FAST DELIVERY</span>
+                <span class="ticker-item accent">✦</span>
+            </div>
+        </div>
+
+        <!-- ======= WHAT IT IS ======= -->
+        <section class="svc-what">
+            <div class="svc-what-inner">
+                <div class="svc-what-label-col">
+                    <span class="manifesto-index">// 01</span>
+                    <span class="manifesto-tag">WHAT_IT_IS</span>
+                </div>
+                <div class="svc-what-text-col">
+                    <h2 class="svc-what-title">One page.<br>Everything you need.<br><span class="dim">Nothing you don't.</span></h2>
+                    <div class="svc-what-body">
+                        <p>A one-page website is the sharpest tool in the digital arsenal when your goal is singular and your message is clear. No navigation maze, no diluted attention — just a ruthlessly crafted single-scroll experience that takes the visitor from "who are you?" to "I want this" without a single detour.</p>
+                        <p>We engineer each section — hero, value proposition, social proof, services, contact — as a precise conversion layer. Every element is intentional. Every word earns its space. The result is a site that feels impossibly clean and converts like a machine.</p>
+                        <p>Perfect for: <strong>freelancers, new brands, product launches, events, agencies, studios, and anyone who needs a professional digital presence that actually works.</strong></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= PRICING CARD ======= -->
+        <section class="svc-pricing">
+            <div class="svc-pricing-inner">
+
+                <div class="svc-pricing-header">
+                    <span class="section-label">// 02 — PACKAGE_SPEC</span>
+                    <h2 class="svc-pricing-title">THE<br>PACKAGE_</h2>
+                </div>
+
+                <div class="svc-pricing-layout">
+
+                    <!-- MAIN PRICING CARD -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-top">
+                            <div class="pricing-card-name-row">
+                                <span class="pricing-card-name">ONE-PAGE<br>WEBSITE</span>
+                                <span class="pricing-card-badge">STANDARD</span>
+                            </div>
+                            <div class="pricing-price-block">
+                                <span class="pricing-from">Starting at</span>
+                                <div class="pricing-price-row">
+                                    <span class="pricing-currency">€</span>
+                                    <span class="pricing-amount">890</span>
+                                </div>
+                                <span class="pricing-note">One-time. No recurring fees. No hidden costs.</span>
+                            </div>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <!-- DELIVERABLES -->
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// WHAT'S INCLUDED</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Custom Design & Layout</strong>
+                                        <p>Fully bespoke visual design aligned to your brand. No theme, no template — yours alone.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Custom HTML / CSS / JS</strong>
+                                        <p>Hand-written code. Clean, fast, maintainable. No page builders, no WordPress bloat.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Up to 7 Sections</strong>
+                                        <p>Hero, about, services, work samples, testimonials, FAQ, contact — you choose what matters.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Fully Responsive</strong>
+                                        <p>Pixel-perfect on every device: mobile, tablet, desktop. Tested across browsers.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Contact Form</strong>
+                                        <p>Functional contact form connected to your email. No third-party subscriptions required.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>SEO Foundation</strong>
+                                        <p>Meta tags, semantic HTML, Open Graph, structured data, and performance-optimised assets.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Micro-Animations</strong>
+                                        <p>Subtle, purposeful transitions and scroll interactions that elevate the experience without distraction.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>1 Round of Revisions</strong>
+                                        <p>One focused round of revisions after the first build delivery. Precision over endless iteration.</p>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item included">
+                                    <span class="pricing-check">✓</span>
+                                    <div>
+                                        <strong>Deployment-Ready Handoff</strong>
+                                        <p>Clean file package + deployment guide. Ready for Netlify, Vercel, GitHub Pages, or your host of choice.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <!-- ADD-ONS -->
+                        <div class="pricing-section">
+                            <span class="pricing-section-label">// OPTIONAL ADD-ONS</span>
+                            <ul class="pricing-list">
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Copywriting</strong>
+                                        <p>Strategic copy written for conversion. We write, you approve.</p>
+                                        <span class="addon-price">From €150</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Extra Sections</strong>
+                                        <p>Need more than 7? Each additional section beyond the base package.</p>
+                                        <span class="addon-price">€80 / section</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Domain & Hosting Setup</strong>
+                                        <p>Full setup and configuration on your chosen hosting platform.</p>
+                                        <span class="addon-price">€120 one-time</span>
+                                    </div>
+                                </li>
+                                <li class="pricing-list-item addon">
+                                    <span class="pricing-plus">+</span>
+                                    <div>
+                                        <strong>Multilingual (EN + IT)</strong>
+                                        <p>Full bilingual version of the site with language toggle.</p>
+                                        <span class="addon-price">From €200</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-divider"></div>
+
+                        <div class="pricing-card-footer">
+                            <a href="contact.html" class="pricing-cta-btn">
+                                START THIS PROJECT <span class="arrow">→</span>
+                            </a>
+                            <p class="pricing-cta-note">Final price depends on scope. Submit your brief and we'll give you an exact quote within 24h.</p>
+                        </div>
+                    </div>
+
+                    <!-- SIDEBAR SPECS -->
+                    <div class="pricing-sidebar">
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TIMELINE</span>
+                            <div class="psidebar-timeline">
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 1</span>
+                                    <span class="tl-event">Brief & Onboarding</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 3–5</span>
+                                    <span class="tl-event">Design Mockup</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 6–14</span>
+                                    <span class="tl-event">Full Build</span>
+                                </div>
+                                <div class="timeline-step">
+                                    <span class="tl-day">Day 15–17</span>
+                                    <span class="tl-event">Revisions</span>
+                                </div>
+                                <div class="timeline-step tl-last">
+                                    <span class="tl-day">Day 18–21</span>
+                                    <span class="tl-event tl-accent">Live ✓</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// TECH STACK</span>
+                            <div class="psidebar-tags">
+                                <span class="pstag">HTML5</span>
+                                <span class="pstag">CSS3</span>
+                                <span class="pstag">Vanilla JS</span>
+                                <span class="pstag">Responsive</span>
+                                <span class="pstag">Schema.org</span>
+                                <span class="pstag">Open Graph</span>
+                                <span class="pstag">WebP Assets</span>
+                                <span class="pstag">Git Handoff</span>
+                            </div>
+                        </div>
+
+                        <div class="psidebar-block">
+                            <span class="psidebar-label">// BEST FOR</span>
+                            <ul class="psidebar-list">
+                                <li>Freelancers & solo creatives</li>
+                                <li>New brands entering the market</li>
+                                <li>Product or event launches</li>
+                                <li>Agencies needing a sub-page</li>
+                                <li>Anyone with one clear CTA</li>
+                            </ul>
+                        </div>
+
+                        <div class="psidebar-block psidebar-status">
+                            <span class="psidebar-label">// AVAILABILITY</span>
+                            <span class="svc-status-badge">● AVAILABLE NOW</span>
+                            <p class="psidebar-avail-note">We take a limited number of projects per month to guarantee quality. Secure your slot before it's gone.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= HOW IT WORKS ======= -->
+        <section class="svc-process">
+            <div class="svc-process-inner">
+                <div class="svc-process-header">
+                    <span class="section-label">// 03 — THE_PROCESS</span>
+                    <h2 class="svc-process-title">HOW WE<br>WORK_</h2>
+                </div>
+                <div class="svc-process-steps">
+                    <div class="svc-step">
+                        <span class="svc-step-num">01_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Brief</h3>
+                            <p class="svc-step-desc">You fill out our project brief. We go through every detail together — your brand, your goals, your audience, your competitors. No ambiguity allowed.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">02_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Design</h3>
+                            <p class="svc-step-desc">A full high-fidelity mockup. Every section, every colour, every type choice — locked in before a single line of code is written. One revision round included.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">03_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Build</h3>
+                            <p class="svc-step-desc">We build it from scratch. Clean HTML, CSS, and JavaScript. Performance-optimised, responsive, cross-browser. No shortcuts, no plugins, no debt.</p>
+                        </div>
+                    </div>
+                    <div class="svc-step">
+                        <span class="svc-step-num">04_</span>
+                        <div class="svc-step-content">
+                            <h3 class="svc-step-title">Handoff</h3>
+                            <p class="svc-step-desc">You receive a clean file package, a deployment guide, and the source code. Ready to go live in minutes. You own everything, forever.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= FAQ ======= -->
+        <section class="svc-faq">
+            <div class="svc-faq-inner">
+                <div class="svc-faq-header">
+                    <span class="section-label">// 04 — FAQ</span>
+                    <h2 class="svc-faq-title">COMMON<br>QUESTIONS_</h2>
+                </div>
+                <div class="svc-faq-list">
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Do I need to provide the copy and images?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>You can provide them, or we can help. Copywriting and image sourcing are available as optional add-ons. If you have brand guidelines or existing material, even better — send us everything you have.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Can I update the site myself after delivery?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>Yes. You receive the full source code and a documentation file explaining how to edit text, images, and sections. No CMS dependency, no monthly platform fees.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>What if I need more than 7 sections?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>No problem. Additional sections are available at €80 each. Specify this in your brief and we'll include it in the final quote. Complex sections (interactive, animated, or data-driven) may vary in price.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>How does payment work?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>50% upfront at project start, 50% on delivery before handoff. We accept bank transfer and PayPal. A signed agreement is required before any work begins.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>What do you need from me to get started?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>A filled brief, your brand assets (logo, colours, fonts if you have them), and any reference sites you like. The more information you provide upfront, the faster and better the result.</p>
+                        </div>
+                    </div>
+
+                    <div class="svc-faq-item js-faq-op">
+                        <button class="svc-faq-trigger faq-trigger-op">
+                            <span>Is the €890 price fixed?</span>
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="svc-faq-answer faq-content-op">
+                            <p>It's our starting point. Final pricing depends on scope, complexity, and any add-ons. Submit your brief and we'll give you an exact quote within 24 hours — no vague estimates.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= OTHER SERVICES ======= -->
+        <section class="svc-other-services">
+            <div class="svc-other-inner">
+                <span class="section-label">// 05 — OTHER_SERVICES</span>
+                <h2 class="svc-other-title">ALSO<br>AVAILABLE_</h2>
+                <div class="svc-other-grid">
+                    <a href="ecommerce.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(02)</span>
+                            <span class="svc-other-status svc-status-soon">COMING SOON</span>
+                        </div>
+                        <h3 class="svc-other-name">CUSTOM<br>E-COMMERCE</h3>
+                        <p class="svc-other-desc">Shopify stores engineered to dominate. Custom UX flows designed to maximise conversions and AOV.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                    <a href="multipage.html" class="svc-other-card">
+                        <div class="svc-other-card-top">
+                            <span class="svc-other-num">(03)</span>
+                            <span class="svc-other-status svc-status-soon">COMING SOON</span>
+                        </div>
+                        <h3 class="svc-other-name">MULTI-PAGE<br>WEBSITE</h3>
+                        <p class="svc-other-desc">A complete scalable ecosystem for brands that need room to grow and a flawless architecture to match.</p>
+                        <span class="svc-other-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= CTA CLOSER ======= -->
+        <section class="about-cta-closer">
+            <span class="cta-closer-label">// READY TO START</span>
+            <h2 class="cta-closer-title">LET'S<br>BUILD_</h2>
+            <div class="cta-closer-actions">
+                <a href="contact.html" class="btn-solid-white">START A PROJECT →</a>
+                <a href="works.html" class="btn-dashed">VIEW WORK <span class="arrow">↗</span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ======= FOOTER ======= -->
+    <footer class="hyper-footer">
+        <div class="footer-top-line">
+            <div class="footer-nav-minimal">
+                <a href="works.html">WORK</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="mailto:coodie.studio@gmail.com">EMAIL</a>
+            </div>
+            <div class="footer-center">
+                <h2 class="footer-brand-minimal">COODIE_STUDIO™</h2>
+            </div>
+            <div class="footer-meta-minimal">
+                <div class="social-row">
+                    <a href="https://www.instagram.com/coodie_studio/">IG</a>
+                    <span>/</span>
+                    <a href="https://www.tiktok.com/@coodie.studio?is_from_webapp=1&sender_device=pc">TT</a>
+                </div>
+                <span id="live-clock" class="minimal-clock">00:00:00 CEST</span>
+            </div>
+        </div>
+        <div class="footer-legal-line">
+            <p>Copyright © 2026 Coodie Studio. All rights reserved.</p>
+            <ul class="policies" role="list">
+                <li><a href="privacy.html" title="Read our privacy policy">Privacy Policy</a></li>
+                <li><a href="cookie.html" title="Read our cookie policy">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
