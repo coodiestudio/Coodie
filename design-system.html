@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COODIE_STUDIO™ – Design System v2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        /* ── Reset ── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ── Tokens ── */
+        :root {
+            --yellow:  #EDE500;
+            --blue:    #5BC8F5;
+            --green:   #00FF41;
+            --black:   #000000;
+            --white:   #FFFFFF;
+            --grey:    #888888;
+            --font-display: 'Archivo Black', sans-serif;
+            --font-body:    'Inter', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            font-family: var(--font-body);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        /* ── Layout ── */
+        .ds-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 5vw 8rem;
+        }
+
+        .ds-header {
+            background: #000;
+            border-bottom: 1px solid #222;
+            padding: 3rem 5vw;
+            margin-bottom: 5rem;
+        }
+
+        .ds-header-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .ds-eyebrow {
+            font-family: var(--font-body);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: var(--green);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .ds-title {
+            font-family: var(--font-display);
+            font-size: clamp(2.5rem, 5vw, 4.5rem);
+            line-height: 0.9;
+            letter-spacing: -0.03em;
+        }
+
+        .ds-title .hl-yellow { background: var(--yellow); color: #000; padding: 0.04em 0.12em; }
+        .ds-title .hl-blue   { background: var(--blue);   color: #fff; padding: 0.04em 0.12em; }
+
+        .ds-meta {
+            text-align: right;
+            font-size: 0.75rem;
+            color: #444;
+            line-height: 1.8;
+            font-family: monospace;
+        }
+
+        /* ── Section ── */
+        .ds-section {
+            margin-bottom: 6rem;
+        }
+
+        .ds-section-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: var(--yellow);
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .ds-section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            letter-spacing: -0.03em;
+            line-height: 0.9;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 1.5rem;
+        }
+
+        /* ── Color swatches ── */
+        .ds-swatches {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 1rem;
+        }
+
+        .ds-swatch {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .ds-swatch-block {
+            aspect-ratio: 1;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .ds-swatch-name {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .ds-swatch-hex {
+            font-family: monospace;
+            font-size: 0.65rem;
+            color: #555;
+        }
+
+        .ds-swatch-role {
+            font-size: 0.6rem;
+            color: #333;
+            letter-spacing: 0.04em;
+        }
+
+        /* ── Typography specimens ── */
+        .ds-type-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .ds-type-row {
+            display: grid;
+            grid-template-columns: 140px 1fr;
+            gap: 2rem;
+            align-items: baseline;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #111;
+        }
+
+        .ds-type-meta {
+            font-size: 0.65rem;
+            color: #444;
+            line-height: 1.7;
+            font-family: monospace;
+        }
+
+        /* ── Highlight demos ── */
+        .ds-highlight-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .ds-highlight-card {
+            background: #000;
+            padding: 3rem;
+            border: 1px solid #1a1a1a;
+        }
+
+        .ds-highlight-card.white-bg {
+            background: #fff;
+            color: #000;
+        }
+
+        .ds-hl-example {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 4vw, 3.5rem);
+            line-height: 1.1;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+
+        .ds-hl-note {
+            font-size: 0.7rem;
+            color: #555;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            font-weight: 700;
+        }
+
+        .ds-highlight-card.white-bg .ds-hl-note {
+            color: #aaa;
+        }
+
+        /* Highlight utility classes */
+        .hl-yellow { background-color: var(--yellow); color: #000; padding: 0.04em 0.14em; display: inline; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+        .hl-blue   { background-color: var(--blue);   color: #fff; padding: 0.04em 0.14em; display: inline; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+
+        /* ── Buttons ── */
+        .ds-button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .btn-yellow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--yellow);
+            color: #000;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+        }
+        .btn-yellow:hover { background: var(--blue); color: #fff; transform: translateX(4px); }
+
+        .btn-blue {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: var(--blue);
+            color: #fff;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+        }
+        .btn-blue:hover { background: var(--yellow); color: #000; transform: translateX(4px); }
+
+        .btn-outline-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: transparent;
+            color: #fff;
+            font-family: var(--font-display);
+            font-size: 0.85rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            border: 1px solid rgba(255,255,255,0.3);
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s, color 0.3s, border-color 0.3s;
+        }
+        .btn-outline-white:hover { background: #fff; color: #000; border-color: #fff; }
+
+        .btn-text-white {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #fff;
+            font-family: var(--font-body);
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 1px dashed rgba(255,255,255,0.3);
+            padding-bottom: 2px;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        .btn-text-white:hover { color: var(--yellow); border-color: var(--yellow); }
+
+        /* ── Numbered badges ── */
+        .ds-badge-row {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .num-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 3.2rem;
+            height: 3.2rem;
+            font-family: var(--font-display);
+            font-size: 1rem;
+            letter-spacing: 0;
+        }
+        .num-badge.yellow { background: var(--yellow); color: #000; }
+        .num-badge.blue   { background: var(--blue);   color: #fff; }
+
+        .ds-badge-combo {
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .ds-badge-label {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            border: 2px solid #333;
+            padding: 0.6rem 1.5rem;
+            height: 3.2rem;
+            display: flex;
+            align-items: center;
+            color: #fff;
+        }
+
+        /* ── Social post mockups ── */
+        .ds-post-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .ds-post {
+            aspect-ratio: 4/5;
+            position: relative;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow: hidden;
+        }
+
+        .ds-post.dark  { background: #000; }
+        .ds-post.light { background: #fff; color: #000; }
+
+        .ds-post-num {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #555;
+            font-family: var(--font-body);
+        }
+
+        .ds-post.light .ds-post-num { color: #aaa; }
+
+        .ds-post-asterisk {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #fff;
+            align-self: flex-end;
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+        }
+
+        .ds-post.light .ds-post-asterisk { color: #000; }
+
+        .ds-post-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .ds-post-headline {
+            font-family: var(--font-display);
+            font-size: clamp(1.8rem, 4.5vw, 2.8rem);
+            line-height: 1.05;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+        }
+
+        .ds-post.light .ds-post-headline { color: #000; }
+
+        .ds-post-sub {
+            font-size: 0.85rem;
+            color: #666;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        .ds-post.light .ds-post-sub { color: #777; }
+
+        .ds-post-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .ds-post-handle {
+            font-family: var(--font-display);
+            font-size: 0.72rem;
+            letter-spacing: 0.05em;
+            color: var(--blue);
+        }
+
+        .ds-post.light .ds-post-handle { color: var(--blue); }
+
+        .ds-post-arrow {
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .ds-post.light .ds-post-arrow { color: #aaa; }
+
+        /* ── Rules / Guidelines ── */
+        .ds-rules {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .ds-rule-card {
+            background: #000;
+            border: 1px solid #1a1a1a;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .ds-rule-num {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            line-height: 1;
+            color: #1a1a1a;
+        }
+
+        .ds-rule-title {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            letter-spacing: -0.01em;
+            text-transform: uppercase;
+        }
+
+        .ds-rule-desc {
+            font-size: 0.88rem;
+            color: #666;
+            line-height: 1.65;
+        }
+
+        .ds-rule-example {
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #444;
+            font-family: monospace;
+            border-left: 2px solid #1a1a1a;
+            padding-left: 0.75rem;
+            line-height: 1.7;
+        }
+
+        /* ── Divider ── */
+        hr.ds-hr { border: none; border-top: 1px solid #111; margin: 4rem 0; }
+
+        /* ── Responsive ── */
+        @media (max-width: 768px) {
+            .ds-swatches { grid-template-columns: repeat(3, 1fr); }
+            .ds-highlight-grid { grid-template-columns: 1fr; }
+            .ds-post-grid { grid-template-columns: 1fr; }
+            .ds-rules { grid-template-columns: 1fr; }
+            .ds-header-inner { flex-direction: column; gap: 2rem; }
+            .ds-meta { text-align: left; }
+            .ds-type-row { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ── Header ── -->
+    <div class="ds-header">
+        <div class="ds-header-inner">
+            <div>
+                <p class="ds-eyebrow">● DESIGN SYSTEM v2</p>
+                <h1 class="ds-title">
+                    COODIE<br>
+                    <span class="hl-yellow">STUDIO™</span>
+                </h1>
+            </div>
+            <div class="ds-meta">
+                VERSION: 2.0<br>
+                UPDATED: 2026<br>
+                FONTS: ARCHIVO BLACK + INTER<br>
+                STATUS: ● ACTIVE
+            </div>
+        </div>
+    </div>
+
+    <div class="ds-container">
+
+        <!-- ══════════════════════════════════════
+             01. COLOR PALETTE
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 01 — COLORS</span>
+            <h2 class="ds-section-title">COLOR<br>PALETTE_</h2>
+
+            <div class="ds-swatches">
+                <div class="ds-swatch">
+                    <div class="ds-swatch-block" style="background:#EDE500;"></div>
+                    <div class="ds-swatch-name">Yellow</div>
+                    <div class="ds-swatch-hex">#EDE500</div>
+                    <div class="ds-swatch-role">Accent 01 · Bg → Black text</div>
+                </div>
+                <div class="ds-swatch">
+                    <div class="ds-swatch-block" style="background:#5BC8F5;"></div>
+                    <div class="ds-swatch-name">Blue</div>
+                    <div class="ds-swatch-hex">#5BC8F5</div>
+                    <div class="ds-swatch-role">Accent 02 · Bg → White text</div>
+                </div>
+                <div class="ds-swatch">
+                    <div class="ds-swatch-block" style="background:#00FF41;"></div>
+                    <div class="ds-swatch-name">Green</div>
+                    <div class="ds-swatch-hex">#00FF41</div>
+                    <div class="ds-swatch-role">Availability only</div>
+                </div>
+                <div class="ds-swatch">
+                    <div class="ds-swatch-block" style="background:#000000; border:1px solid #333;"></div>
+                    <div class="ds-swatch-name">Black</div>
+                    <div class="ds-swatch-hex">#000000</div>
+                    <div class="ds-swatch-role">Primary background</div>
+                </div>
+                <div class="ds-swatch">
+                    <div class="ds-swatch-block" style="background:#FFFFFF;"></div>
+                    <div class="ds-swatch-name">White</div>
+                    <div class="ds-swatch-hex">#FFFFFF</div>
+                    <div class="ds-swatch-role">Primary text · Alt bg</div>
+                </div>
+            </div>
+
+            <hr class="ds-hr">
+
+            <p style="font-size:0.8rem; color:#555; line-height:1.7; max-width:600px;">
+                <strong style="color:#fff;">Distribution rule:</strong> Yellow and Blue are used at a 50/50 ratio across all touchpoints.
+                Alternate between them section by section, element by element. Neither accent should dominate.
+                Green is reserved exclusively for availability / status indicators.
+            </p>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             02. TYPOGRAPHY
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 02 — TYPOGRAPHY</span>
+            <h2 class="ds-section-title">TYPE<br>SYSTEM_</h2>
+
+            <div class="ds-type-grid">
+
+                <div class="ds-type-row">
+                    <div class="ds-type-meta">
+                        Archivo Black<br>
+                        Display / All headings<br>
+                        UPPERCASE
+                    </div>
+                    <div style="font-family:'Archivo Black',sans-serif; font-size:clamp(3rem,7vw,6rem); line-height:0.9; letter-spacing:-0.03em; text-transform:uppercase; color:#fff;">
+                        Aa
+                    </div>
+                </div>
+
+                <div class="ds-type-row">
+                    <div class="ds-type-meta">
+                        Archivo Black<br>
+                        Hero size<br>
+                        ~10–18vw
+                    </div>
+                    <div style="font-family:'Archivo Black',sans-serif; font-size:clamp(2.5rem,6vw,5rem); line-height:0.9; letter-spacing:-0.04em; text-transform:uppercase; color:#fff;">
+                        MOST WEBSITES<br><span class="hl-yellow">ARE KILLING</span><br>BRANDS.
+                    </div>
+                </div>
+
+                <div class="ds-type-row">
+                    <div class="ds-type-meta">
+                        Archivo Black<br>
+                        Section title<br>
+                        ~4–8vw
+                    </div>
+                    <div style="font-family:'Archivo Black',sans-serif; font-size:clamp(2rem,4.5vw,3.5rem); line-height:0.9; letter-spacing:-0.03em; text-transform:uppercase; color:#fff;">
+                        PEOPLE DON'T<br>JUDGE YOUR BUSINESS.<br><span class="hl-blue">THEY JUDGE YOUR WEBSITE.</span>
+                    </div>
+                </div>
+
+                <div class="ds-type-row">
+                    <div class="ds-type-meta">
+                        Inter<br>
+                        Body / UI text<br>
+                        400–700
+                    </div>
+                    <div style="font-family:'Inter',sans-serif;">
+                        <p style="font-size:1.1rem; color:#ccc; line-height:1.65; margin-bottom:1rem;">
+                            We engineer custom digital architectures from the ground up. Every pixel is intentional, every line of code is ruthlessly optimized for speed, aesthetics, and raw conversion power.
+                        </p>
+                        <p style="font-size:0.8rem; color:#555; font-weight:700; letter-spacing:0.12em; text-transform:uppercase;">
+                            LABEL / EYEBROW STYLE
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             03. HIGHLIGHT BLOCKS
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 03 — HIGHLIGHTS</span>
+            <h2 class="ds-section-title">HIGHLIGHT<br>SYSTEM_</h2>
+
+            <div class="ds-highlight-grid">
+
+                <div class="ds-highlight-card">
+                    <div class="ds-hl-example">
+                        MOST WEBSITES ARE <span class="hl-yellow">KILLING</span> BRANDS.
+                    </div>
+                    <p class="ds-hl-note">Yellow bg · Black text<br>class="hl-yellow"<br>Use on dark backgrounds</p>
+                </div>
+
+                <div class="ds-highlight-card">
+                    <div class="ds-hl-example">
+                        OUTDATED DESIGN = <span class="hl-blue">OUTDATED BRAND</span>
+                    </div>
+                    <p class="ds-hl-note">Blue bg · White text<br>class="hl-blue"<br>Use on dark backgrounds</p>
+                </div>
+
+                <div class="ds-highlight-card white-bg">
+                    <div class="ds-hl-example">
+                        THEY JUDGE YOUR <span class="hl-blue">WEBSITE.</span>
+                    </div>
+                    <p class="ds-hl-note">Blue bg · White text<br>Also works on light bg</p>
+                </div>
+
+                <div class="ds-highlight-card white-bg">
+                    <div class="ds-hl-example" style="color:#000;">
+                        THE <span class="hl-yellow">3</span> BIGGEST MISTAKES
+                    </div>
+                    <p class="ds-hl-note">Yellow bg · Black text<br>Single words / numbers<br>High impact, minimal use</p>
+                </div>
+
+            </div>
+
+            <div style="margin-top:2rem; padding:1.5rem; background:#000; border:1px solid #1a1a1a;">
+                <p style="font-size:0.75rem; color:#555; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:1rem;">USAGE RULES</p>
+                <ul style="list-style:none; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li style="font-size:0.85rem; color:#888; padding-left:1.2rem; position:relative;">
+                        <span style="position:absolute;left:0;color:var(--yellow);">—</span>
+                        Highlight only 1–3 key words per heading. Never highlight full sentences.
+                    </li>
+                    <li style="font-size:0.85rem; color:#888; padding-left:1.2rem; position:relative;">
+                        <span style="position:absolute;left:0;color:var(--yellow);">—</span>
+                        Distribute 50% yellow, 50% blue across the entire post series.
+                    </li>
+                    <li style="font-size:0.85rem; color:#888; padding-left:1.2rem; position:relative;">
+                        <span style="position:absolute;left:0;color:var(--yellow);">—</span>
+                        Yellow highlight always pairs with black text. Blue highlight always pairs with white text.
+                    </li>
+                    <li style="font-size:0.85rem; color:#888; padding-left:1.2rem; position:relative;">
+                        <span style="position:absolute;left:0;color:var(--blue);">—</span>
+                        Never combine yellow and blue highlights in the same heading.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             04. BUTTONS
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 04 — BUTTONS</span>
+            <h2 class="ds-section-title">BUTTON<br>SYSTEM_</h2>
+
+            <div style="display:flex; flex-direction:column; gap:2rem;">
+
+                <div>
+                    <p style="font-size:0.65rem; color:#444; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:1rem;">PRIMARY — Yellow (hover: Blue)</p>
+                    <div class="ds-button-row">
+                        <a href="#" class="btn-yellow">START YOUR PROJECT →</a>
+                        <a href="#" class="btn-yellow">VIEW DETAILS →</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="font-size:0.65rem; color:#444; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:1rem;">SECONDARY — Blue (hover: Yellow)</p>
+                    <div class="ds-button-row">
+                        <a href="#" class="btn-blue">EXPLORE WORK →</a>
+                        <a href="#" class="btn-blue">SEE CASE STUDY →</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="font-size:0.65rem; color:#444; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:1rem;">GHOST — Outline White (hover: Fill White)</p>
+                    <div class="ds-button-row">
+                        <a href="#" class="btn-outline-white">TRANSMIT DATA →</a>
+                    </div>
+                </div>
+
+                <div>
+                    <p style="font-size:0.65rem; color:#444; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:1rem;">TEXT — Dashed underline (hover: Yellow)</p>
+                    <div class="ds-button-row">
+                        <a href="#" class="btn-text-white">INITIATE PROJECT ↗</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div style="margin-top:2rem; padding:1.5rem; background:#000; border:1px solid #1a1a1a;">
+                <p style="font-size:0.75rem; color:#555; font-weight:700; letter-spacing:0.12em; text-transform:uppercase; margin-bottom:0.75rem;">BUTTON RULES</p>
+                <p style="font-size:0.85rem; color:#888; line-height:1.65;">
+                    Primary CTAs always use <strong style="color:var(--yellow);">Yellow</strong>. Secondary/ghost actions use <strong style="color:var(--blue);">Blue</strong>.
+                    On hover, Yellow transitions to Blue and vice versa — creating a continuous alternation loop.
+                    Font: <strong style="color:#fff;">Archivo Black</strong>. Text: UPPERCASE. No border-radius.
+                </p>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             05. NUMBERED BADGES
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 05 — BADGES</span>
+            <h2 class="ds-section-title">NUMBERED<br>BADGES_</h2>
+
+            <p style="font-size:0.9rem; color:#666; margin-bottom:2rem; line-height:1.6;">Used in service items, process steps, and social post slides. Alternate yellow / blue for each item.</p>
+
+            <div class="ds-badge-row" style="margin-bottom:2rem;">
+                <span class="num-badge yellow">01</span>
+                <span class="num-badge blue">02</span>
+                <span class="num-badge yellow">03</span>
+                <span class="num-badge blue">04</span>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:1rem;">
+                <div class="ds-badge-combo">
+                    <span class="num-badge yellow">01</span>
+                    <span class="ds-badge-label">OUTDATED DESIGN</span>
+                </div>
+                <div class="ds-badge-combo">
+                    <span class="num-badge blue">02</span>
+                    <span class="ds-badge-label">NO CLEAR MESSAGE</span>
+                </div>
+                <div class="ds-badge-combo">
+                    <span class="num-badge yellow">03</span>
+                    <span class="ds-badge-label">POOR MOBILE EXPERIENCE</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             06. SOCIAL POST MOCKUPS
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 06 — SOCIAL POSTS</span>
+            <h2 class="ds-section-title">POST<br>TEMPLATES_</h2>
+
+            <p style="font-size:0.9rem; color:#666; margin-bottom:2rem; line-height:1.6;">
+                Ratio: 4:5 (portrait Instagram). Black or White background only. Always include: slide number (top left), asterisk (top right), @coodie.studio handle (bottom left), arrow → (bottom right).
+            </p>
+
+            <div class="ds-post-grid">
+
+                <!-- Post A — Dark, Yellow highlight -->
+                <div class="ds-post dark">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <span class="ds-post-num">01</span>
+                        <span class="ds-post-asterisk">✳</span>
+                    </div>
+                    <div class="ds-post-body">
+                        <div class="ds-post-headline">
+                            MOST WEBSITES<br>ARE <span class="hl-yellow">KILLING</span><br>BRANDS.
+                        </div>
+                        <p class="ds-post-sub">And no one wants to admit it.</p>
+                    </div>
+                    <div class="ds-post-footer">
+                        <span class="ds-post-handle">@COODIE.STUDIO</span>
+                        <span class="ds-post-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- Post B — Dark, Blue highlight -->
+                <div class="ds-post dark">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <span class="ds-post-num">05</span>
+                        <span class="ds-post-asterisk">✳</span>
+                    </div>
+                    <div class="ds-post-body">
+                        <div class="ds-post-headline">
+                            OUTDATED DESIGN =<br><span class="hl-blue">OUTDATED BRAND</span>
+                        </div>
+                    </div>
+                    <div class="ds-post-footer">
+                        <span class="ds-post-handle">@COODIE.STUDIO</span>
+                        <span class="ds-post-arrow">→</span>
+                    </div>
+                </div>
+
+                <!-- Post C — Light, large blue text -->
+                <div class="ds-post light">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <span class="ds-post-num" style="color:#aaa;">02</span>
+                        <span class="ds-post-asterisk" style="color:#000;">✳</span>
+                    </div>
+                    <div class="ds-post-body">
+                        <p style="font-family:'Inter',sans-serif; font-size:0.85rem; font-weight:700; color:#000; letter-spacing:0.05em; margin-bottom:0.5rem; border-bottom:2px solid #000; padding-bottom:0.5rem; display:inline-block;">Here's the truth:</p>
+                        <div class="ds-post-headline" style="color:#000; margin-top:0.5rem;">
+                            PEOPLE DON'T JUDGE YOUR BUSINESS.<br>
+                            <span style="color:var(--blue);">THEY JUDGE YOUR WEBSITE.</span>
+                        </div>
+                    </div>
+                    <div class="ds-post-footer">
+                        <span class="ds-post-handle" style="color:var(--blue);">@COODIE.STUDIO</span>
+                        <span class="ds-post-arrow" style="color:#aaa;">→</span>
+                    </div>
+                </div>
+
+                <!-- Post D — Light, numbered list -->
+                <div class="ds-post light" style="padding:2rem;">
+                    <div style="display:flex; justify-content:space-between; align-items:flex-start;">
+                        <span class="ds-post-num" style="color:#aaa;">04</span>
+                        <span class="ds-post-asterisk" style="color:#000;">✳</span>
+                    </div>
+                    <div class="ds-post-body" style="gap:1.2rem;">
+                        <div class="ds-post-headline" style="color:#000; font-size:clamp(1.4rem,3.5vw,2rem); margin-bottom:0.5rem;">
+                            THE <span class="hl-blue">3</span> BIGGEST WEBSITE MISTAKES
+                        </div>
+                        <div style="display:flex; flex-direction:column; gap:0.75rem;">
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <span class="num-badge yellow" style="width:2.2rem; height:2.2rem; font-size:0.8rem; flex-shrink:0;">01</span>
+                                <span style="font-family:'Archivo Black',sans-serif; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; color:#000; border:2px solid #000; padding:0.4rem 0.8rem; flex:1;">OUTDATED DESIGN</span>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <span class="num-badge blue" style="width:2.2rem; height:2.2rem; font-size:0.8rem; flex-shrink:0;">02</span>
+                                <span style="font-family:'Archivo Black',sans-serif; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; color:#000; border:2px solid #000; padding:0.4rem 0.8rem; flex:1;">NO CLEAR MESSAGE</span>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:0.75rem;">
+                                <span class="num-badge yellow" style="width:2.2rem; height:2.2rem; font-size:0.8rem; flex-shrink:0;">03</span>
+                                <span style="font-family:'Archivo Black',sans-serif; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.04em; color:#000; border:2px solid #000; padding:0.4rem 0.8rem; flex:1;">POOR MOBILE EXPERIENCE</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ds-post-footer">
+                        <span class="ds-post-handle" style="color:var(--blue);">@COODIE.STUDIO</span>
+                        <span class="ds-post-arrow" style="color:#aaa;">→</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             07. DESIGN RULES FOR SOCIAL POSTS
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 07 — RULES</span>
+            <h2 class="ds-section-title">POST<br>GUIDELINES_</h2>
+
+            <div class="ds-rules">
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">01</div>
+                    <div class="ds-rule-title">Background</div>
+                    <p class="ds-rule-desc">Use pure black (#000) or pure white (#fff) backgrounds only. No gradients, no textures, no photos behind text.</p>
+                    <p class="ds-rule-example">Dark posts → white body text<br>Light posts → black body text<br>Handles always in Blue (#5BC8F5)</p>
+                </div>
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">02</div>
+                    <div class="ds-rule-title">Typography</div>
+                    <p class="ds-rule-desc">Headlines: Archivo Black, uppercase, tight letter-spacing (−0.03em). Body/captions: Inter, sentence case.</p>
+                    <p class="ds-rule-example">H1 size: 13–18vw<br>H2 size: 8–12vw<br>Caption: 0.8–1rem Inter</p>
+                </div>
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">03</div>
+                    <div class="ds-rule-title">Highlights</div>
+                    <p class="ds-rule-desc">Max 1–3 words highlighted per slide. Use rectangular background blocks (no border-radius). Alternate Yellow/Blue across the carousel.</p>
+                    <p class="ds-rule-example">Slide 1 → Yellow<br>Slide 2 → Blue<br>Slide 3 → no highlight or Yellow<br>Slide 4 → both (numbered list)</p>
+                </div>
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">04</div>
+                    <div class="ds-rule-title">Anatomy</div>
+                    <p class="ds-rule-desc">Every slide has 4 fixed elements: slide number (top left), asterisk ✳ (top right), @coodie.studio handle (bottom left), arrow → (bottom right).</p>
+                    <p class="ds-rule-example">Slide num: 0.75rem Inter grey<br>Asterisk: 1.5rem bold<br>Handle: Archivo Black blue<br>Arrow: subtle grey</p>
+                </div>
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">05</div>
+                    <div class="ds-rule-title">Spacing</div>
+                    <p class="ds-rule-desc">Generous white space. Headline content is vertically centred. Footer elements always at the bottom. Padding: ~2rem on all sides.</p>
+                    <p class="ds-rule-example">Post ratio: 4:5 (portrait)<br>Content area: centre-aligned vertically<br>Never crowd the frame</p>
+                </div>
+
+                <div class="ds-rule-card">
+                    <div class="ds-rule-num">06</div>
+                    <div class="ds-rule-title">Carousel Structure</div>
+                    <p class="ds-rule-desc">Typical carousel: Hook (dark) → Truth (light) → Problem expand (dark) → Solution list (light) → Proof/CTA (dark). Max 7 slides.</p>
+                    <p class="ds-rule-example">Alternate dark / light backgrounds<br>End on a strong CTA slide<br>Last slide = contact / @handle</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ══════════════════════════════════════
+             08. PROMPT FOR CLAUDE
+             ══════════════════════════════════════ -->
+        <section class="ds-section">
+            <span class="ds-section-label">// 08 — CLAUDE DESIGN PROMPT</span>
+            <h2 class="ds-section-title">AI GENERATION<br>PROMPT_</h2>
+
+            <div style="background:#000; border:1px solid #1a1a1a; padding:2.5rem;">
+                <p style="font-size:0.65rem; color:#444; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:1.5rem;">COPY THIS PROMPT INTO CLAUDE / AI DESIGN TOOLS</p>
+                <div style="font-family:monospace; font-size:0.82rem; color:#888; line-height:1.9; white-space:pre-wrap;">Create a social media carousel post for @coodie.studio following these exact design rules:
+
+<span style="color:var(--yellow);">BRAND:</span> Coodie Studio — independent web design studio
+<span style="color:var(--yellow);">TONE:</span> Bold, direct, editorial. No fluff.
+
+<span style="color:var(--blue);">FONTS:</span>
+• Headlines: Archivo Black, UPPERCASE, letter-spacing -0.03em
+• Body/labels: Inter, sentence case, weight 400–700
+
+<span style="color:var(--blue);">COLORS:</span>
+• Background: pure Black (#000) OR pure White (#fff)
+• Highlight Yellow: #EDE500 → black text on top
+• Highlight Blue: #5BC8F5 → white text on top
+• Green (#00FF41): status/availability badges ONLY
+• Alternate Yellow and Blue highlights 50/50
+
+<span style="color:var(--yellow);">HIGHLIGHT SYSTEM:</span>
+• Use rectangular background blocks (no border-radius)
+• Max 1–3 words per heading
+• class="hl-yellow" → yellow bg, black text
+• class="hl-blue" → blue bg, white text
+
+<span style="color:var(--yellow);">SLIDE ANATOMY (every slide):</span>
+• Top left: slide number (e.g. "01") — small, grey
+• Top right: asterisk ✳ — bold
+• Bottom left: @COODIE.STUDIO — Archivo Black, blue
+• Bottom right: → arrow — grey
+
+<span style="color:var(--blue);">CAROUSEL FORMAT:</span>
+• Slide 1 (Hook): dark bg, strong headline, yellow highlight
+• Slide 2 (Truth): light bg, large statement, blue text/highlight
+• Slide 3 (Problem): dark bg, expand the pain point
+• Slide 4 (List): light bg, numbered list (yellow/blue badges alternating)
+• Slide 5 (Solution): dark bg, blue highlight on key word
+• Last slide (CTA): dark bg, strong CTA, yellow highlight
+
+<span style="color:var(--yellow);">TOPIC FOR THIS POST:</span> [INSERT YOUR TOPIC HERE]</div>
+            </div>
+        </section>
+
+    </div><!-- /ds-container -->
+
+</body>
+</html>
