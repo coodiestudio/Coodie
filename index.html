@@ -1,493 +1,616 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>COODIE_STUDIO™ – Custom Web Design & Web Development</title>
-    <meta name="description"
-        content="We build fast, custom websites for international brands. No templates, just unique digital experiences tailored to grow your business.">
-    <meta name="author" content="Vannia Rharbaoui Urbano">
-    <meta name="robots" content="index, follow">
+  <!-- ── PRIMARY SEO ── -->
+  <title>Coodie International Branding &amp; Web Agency | Brand Identity, Logo &amp; Strategy</title>
+  <meta name="description" content="Coodie is an international creative agency specialising in brand identity, logo design, web development and digital strategy consulting. No calls — everything delivered as a PDF deck.">
+  <meta name="keywords" content="branding agency, logo design, brand identity, web development, digital strategy, international creative agency, brand consulting, rebranding">
+  <meta name="author" content="Coodie">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <link rel="canonical" href="https://coodie.studio/">
 
-    <link rel="icon" type="image/webp" href="img/icon-coodie.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <!-- ── OPEN GRAPH ── -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://coodie.studio/">
+  <meta property="og:site_name"   content="Coodie">
+  <meta property="og:locale"      content="en_US">
+  <meta property="og:title"       content="Coodie — International Branding &amp; Web Agency">
+  <meta property="og:description" content="Brand identity, logo design, web development and strategic consulting for ambitious brands worldwide. Delivered via PDF deck, not calls.">
+  <meta property="og:image"       content="https://coodie.studio/assets/images/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt"   content="Coodie — International Creative Agency">
 
-    <meta property="og:title" content="Coodie Studio – The Simple The Better">
-    <meta property="og:description"
-        content="Custom web design for growing businesses. Fast, responsive, and built to sell.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://coodie.it/">
-    <meta property="og:image" content="https://coodie.it/img/coodie-logo-black.webp">
-    <link rel="apple-touch-icon" href="img/icon-coodie.webp">
+  <!-- ── TWITTER / X ── -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:site"        content="@coodie">
+  <meta name="twitter:title"       content="Coodie — International Branding &amp; Web Agency">
+  <meta name="twitter:description" content="Brand identity, logos, websites and strategy for ambitious brands worldwide. No calls — PDF decks only.">
+  <meta name="twitter:image"       content="https://coodie.studio/assets/images/og-image.jpg">
+  <meta name="twitter:image:alt"   content="Coodie — International Creative Agency">
 
-    <link rel="canonical" href="https://coodie.it/index.html">
-    <meta name="theme-color" content="#000000">
-
-    <link rel="alternate" hreflang="en" href="https://coodie.it/index.html" />
-    <link rel="alternate" hreflang="x-default" href="https://coodie.it/index.html" />
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1R3V6T7DMG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-1R3V6T7DMG');
-    </script>
-
-    <script type="application/ld+json">
+  <!-- ── SCHEMA.ORG ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Coodie",
+    "url": "https://coodie.studio",
+    "logo": "https://coodie.studio/assets/images/logo-icon.webp",
+    "description": "International creative agency specialising in brand identity, logo design, web development and digital strategy consulting.",
+    "email": "hello@coodie.studio",
+    "areaServed": "Worldwide",
+    "priceRange": "€€",
+    "knowsAbout": ["Brand Identity", "Logo Design", "Web Development", "Digital Strategy"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Creative Services",
+      "itemListElement": [
         {
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "WebSite",
-              "@id": "https://coodie.it/#website",
-              "url": "https://coodie.it/",
-              "name": "Coodie Studio",
-              "description": "We build fast, custom websites for international brands. No templates, just unique digital experiences tailored to grow your business.",
-              "inLanguage": "en",
-              "publisher": { "@id": "https://coodie.it/#organization" }
-            },
-            {
-              "@type": "ProfessionalService",
-              "@id": "https://coodie.it/#organization",
-              "name": "Coodie Studio",
-              "alternateName": "COODIE_STUDIO™",
-              "url": "https://coodie.it/",
-              "logo": "https://coodie.it/img/coodie-logo-black.webp",
-              "image": "https://coodie.it/img/coodie-logo-black.webp",
-              "description": "Independent web design and development studio. Custom-coded websites for brands that refuse to be average.",
-              "slogan": "The Simple The Better",
-              "priceRange": "$$",
-              "areaServed": "Worldwide",
-              "address": {
-                "@type": "PostalAddress",
-                "addressCountry": "IT"
-              },
-              "contactPoint": {
-                "@type": "ContactPoint",
-                "email": "coodie.studio@gmail.com",
-                "contactType": "customer service",
-                "availableLanguage": ["English", "Italian"]
-              },
-              "founder": { "@id": "https://coodie.it/#person" },
-              "sameAs": [
-                "https://www.instagram.com/coodie_studio/",
-                "https://www.tiktok.com/@coodie.studio"
-              ],
-              "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Web Design & Development Services",
-                "itemListElement": [
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "One-Page Website",
-                      "url": "https://coodie.it/onepage.html"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Custom E-Commerce Website",
-                      "url": "https://coodie.it/ecommerce.html"
-                    }
-                  },
-                  {
-                    "@type": "Offer",
-                    "itemOffered": {
-                      "@type": "Service",
-                      "name": "Multi-Page Website",
-                      "url": "https://coodie.it/multipage.html"
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "@type": "Person",
-              "@id": "https://coodie.it/#person",
-              "name": "Vannia Rharbaoui Urbano",
-              "jobTitle": "Web Designer & Developer",
-              "worksFor": { "@id": "https://coodie.it/#organization" },
-              "url": "https://coodie.it/about.html",
-              "sameAs": [
-                "https://www.instagram.com/coodie_studio/",
-                "https://www.tiktok.com/@coodie.studio"
-              ]
-            }
-          ]
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Brand Start" },
+          "price": "490",
+          "priceCurrency": "EUR",
+          "description": "Custom logo, brand colors, typography guide and file pack"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Brand Studio" },
+          "price": "1490",
+          "priceCurrency": "EUR",
+          "description": "Full brand identity system, guidelines PDF and social kit"
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": { "@type": "Service", "name": "Brand + Web" },
+          "price": "3990",
+          "priceCurrency": "EUR",
+          "description": "Complete brand system, custom website and 3-month strategy deck"
         }
-        </script>
+      ]
+    }
+  }
+  </script>
+
+  <!-- ── FAVICONS ── -->
+  <link rel="icon"             href="assets/images/logo-icon.webp" type="image/webp">
+  <link rel="apple-touch-icon" href="assets/images/logo-icon.webp">
+  <meta name="theme-color" content="#FAFAF7">
+
+  <!-- ── FONTS ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- ── STYLES ── -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <header class="hero-section" role="banner">
-        <div class="hero-bg" aria-hidden="true"></div>
-        <nav class="hero-nav" aria-label="Main Navigation">
-            <div class="nav-left">
-                <a href="works.html" class="nav-link">Work</a>
+<!-- ════════ MOBILE OVERLAY ════════ -->
+<div
+  class="mobile-overlay"
+  id="mobile-overlay"
+  role="dialog"
+  aria-label="Mobile navigation"
+  aria-modal="true"
+>
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#pricing"  onclick="closeMobile()">Pricing</a>
+  <a href="#process"  onclick="closeMobile()">Process</a>
+  <a href="#contact"  class="mob-cta" onclick="closeMobile()">Start a project →</a>
+</div>
+
+<!-- ════════ NAVIGATION ════════ -->
+<header class="nav" role="banner">
+  <div class="nav-inner">
+
+    <a href="/" class="nav-logo" aria-label="Coodie — Back to homepage">
+      <img
+        src="assets/images/logo-icon.webp"
+        alt="Coodie asterisk mark"
+        width="30" height="30"
+        class="nav-logo-icon"
+        loading="eager"
+        decoding="async"
+      >
+      <img
+        src="assets/images/logo-wordmark.webp"
+        alt="Coodie"
+        height="19"
+        class="nav-logo-word"
+        loading="eager"
+        decoding="async"
+      >
+    </a>
+
+    <nav aria-label="Primary navigation">
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#process">Process</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="nav-cta" aria-label="Start a project with Coodie">
+      Start a project →
+    </a>
+
+    <button
+      class="nav-hamburger"
+      id="hamburger"
+      aria-label="Open mobile navigation"
+      aria-expanded="false"
+      aria-controls="mobile-overlay"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ════════ HERO ════════ -->
+  <section
+    class="hero"
+    aria-labelledby="hero-heading"
+  >
+    <div class="hero-inner">
+
+      <p class="hero-kicker" data-reveal>
+        International Creative Agency · 2026
+      </p>
+
+      <h1 class="hero-h1" id="hero-heading" data-reveal data-delay="1">
+        Brands that<br>
+        work. <span class="accent">Globally.</span>
+      </h1>
+
+      <p class="hero-sub" data-reveal data-delay="2">
+        We craft brand identities, logos, and websites for ambitious companies, from concept to launch.
+      </p>
+
+      <div class="hero-actions" data-reveal data-delay="3">
+        <a href="#pricing" class="btn btn-lime" aria-label="View Coodie pricing plans">
+          Explore Pricing
+        </a>
+        <a href="#contact" class="btn btn-ghost" aria-label="Contact Coodie to start a project">
+          Start a project →
+        </a>
+      </div>
+
+      <div class="hero-badges" aria-label="Service areas" data-reveal data-delay="4">
+        <span class="hbadge">Brand Identity</span>
+        <span class="hbadge">Logo Design</span>
+        <span class="hbadge">Web Development</span>
+        <span class="hbadge">Digital Strategy</span>
+        <span class="hbadge">EU · US · APAC</span>
+      </div>
+
+    </div>
+
+    <div class="hero-scroll" aria-hidden="true">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ════════ SERVICES ════════ -->
+  <section class="section" id="services" aria-labelledby="services-heading">
+    <div class="sec-wrap">
+
+      <header class="sec-header" data-reveal>
+        <p class="sec-eyebrow">01 — Services</p>
+        <h2 class="sec-headline" id="services-heading">What we build.</h2>
+        <p class="sec-desc">
+          Four disciplines. One studio. Everything your brand needs to stand out and scale internationally.
+        </p>
+      </header>
+
+      <div class="services-grid" role="list">
+
+        <article class="srv-card" role="listitem" data-reveal>
+          <div class="srv-icon" aria-hidden="true">✦</div>
+          <h3 class="srv-title">Brand Identity</h3>
+          <p class="srv-desc">
+            Complete visual identity systems built to last. Naming, logo, typography, color palette, and brand guidelines: everything you need to own your market from day one.
+          </p>
+          <ul class="srv-tags" aria-label="Includes">
+            <li class="srv-tag">Naming</li>
+            <li class="srv-tag">Visual System</li>
+            <li class="srv-tag">Guidelines PDF</li>
+            <li class="srv-tag">Social Kit</li>
+          </ul>
+        </article>
+
+        <article class="srv-card" role="listitem" data-reveal data-delay="1">
+          <div class="srv-icon" aria-hidden="true">◎</div>
+          <h3 class="srv-title">Logo Design</h3>
+          <p class="srv-desc">
+            Distinctive marks designed to scale. From favicon to billboard. Icon systems, wordmarks, and logo lockups built for international legibility and memorability.
+          </p>
+          <ul class="srv-tags" aria-label="Includes">
+            <li class="srv-tag">Icon Mark</li>
+            <li class="srv-tag">Wordmark</li>
+            <li class="srv-tag">Lockup Variants</li>
+            <li class="srv-tag">All Formats</li>
+          </ul>
+        </article>
+
+        <article class="srv-card" role="listitem" data-reveal>
+          <div class="srv-icon" aria-hidden="true">⌘</div>
+          <h3 class="srv-title">Web Design &amp; Development</h3>
+          <p class="srv-desc">
+            UI/UX design and clean, fast front-end development. Conversion-focused, SEO-ready, and built to represent your brand online at its very best.
+          </p>
+          <ul class="srv-tags" aria-label="Includes">
+            <li class="srv-tag">UI/UX</li>
+            <li class="srv-tag">Front-End Dev</li>
+            <li class="srv-tag">CMS Integration</li>
+            <li class="srv-tag">SEO Setup</li>
+          </ul>
+        </article>
+
+        <article class="srv-card" role="listitem" data-reveal data-delay="1">
+          <div class="srv-icon" aria-hidden="true">◈</div>
+          <h3 class="srv-title">Digital Strategy</h3>
+          <p class="srv-desc">
+            Strategic brand consulting delivered as a clear, actionable PDF deck. Positioning, content architecture, social strategy, and market entry.
+          </p>
+          <ul class="srv-tags" aria-label="Includes">
+            <li class="srv-tag">Positioning</li>
+            <li class="srv-tag">Content Plan</li>
+            <li class="srv-tag">PDF Deck</li>
+            <li class="srv-tag">Async</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════ PRICING ════════ -->
+  <section class="section pricing-section" id="pricing" aria-labelledby="pricing-heading">
+    <div class="sec-wrap">
+
+      <header class="sec-header" data-reveal>
+        <p class="sec-eyebrow">02 — Pricing</p>
+        <h2 class="sec-headline" id="pricing-heading">Clear prices.<br>No surprises.</h2>
+        <p class="sec-desc">
+          Fixed starting prices for every stage of growth. Custom quotes available for larger or more complex projects.
+        </p>
+      </header>
+
+      <div class="pricing-grid" role="list">
+
+        <!-- Tier 1 -->
+        <article class="price-card" role="listitem" data-reveal>
+          <div class="price-badge neutral" aria-label="Package level">Starter</div>
+          <h3 class="price-name">Brand Start</h3>
+          <p class="price-num" aria-label="Starting from 490 euros">€150</p>
+          <p class="price-note">Starting from · per project</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <ul class="price-features" aria-label="What's included in Brand Start">
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Custom logo: 2 concepts</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Brand color palette</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Typography pairing guide</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>File pack: SVG, PNG, PDF</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>2 revision rounds</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-outline price-btn" aria-label="Get started with Brand Start — from €490">
+            Get started →
+          </a>
+        </article>
+
+        <!-- Tier 2 (featured) -->
+        <article class="price-card featured" role="listitem" data-reveal data-delay="1">
+          <div class="price-badge popular" aria-label="Most popular package">✦ Most Popular</div>
+          <h3 class="price-name">Brand Studio</h3>
+          <p class="price-num" aria-label="Starting from 1490 euros">€890</p>
+          <p class="price-note">Starting from · per project</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <ul class="price-features" aria-label="What's included in Brand Studio">
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Full brand identity system</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Logo + 3 lockup variations</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Brand guidelines PDF (20+ pages)</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Social media kit: 12 templates</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Iconography &amp; pattern system</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Unlimited revision rounds</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-lime price-btn" aria-label="Get started with Brand Studio — from €1,490">
+            Get started →
+          </a>
+        </article>
+
+        <!-- Tier 3 -->
+        <article class="price-card" role="listitem" data-reveal data-delay="2">
+          <div class="price-badge neutral" aria-label="Package level">Full Service</div>
+          <h3 class="price-name">Brand + Web</h3>
+          <p class="price-num" aria-label="Starting from 1490 euros">1,490</p>
+          <p class="price-note">Starting from · per project</p>
+          <div class="price-sep" aria-hidden="true"></div>
+          <ul class="price-features" aria-label="What's included in Brand plus Web">
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Everything in Brand Studio</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Custom website design &amp; dev</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>CMS integration (Shopify)</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>SEO foundation &amp; sitemap</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>3-month digital strategy deck</span></li>
+            <li><span class="pf-check" aria-hidden="true">✓</span><span>Priority support — 60 days</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-ink price-btn" aria-label="Get started with Brand plus Web — from €3,990">
+            Get started →
+          </a>
+        </article>
+
+      </div>
+
+      <p class="pricing-footnote" data-reveal>
+        Need something custom?
+        <a href="#contact" aria-label="Contact Coodie for a custom project quote">Tell us about your project →</a>
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ════════ PROCESS ════════ -->
+  <section class="section" id="process" aria-labelledby="process-heading">
+    <div class="sec-wrap">
+
+      <header class="sec-header" data-reveal>
+        <p class="sec-eyebrow">03 — Process</p>
+        <h2 class="sec-headline" id="process-heading">How we work.</h2>
+        <p class="sec-desc">
+          Async, strategic, and fully remote. No unnecessary calls, everything delivered in clear writing and PDF decks.
+        </p>
+      </header>
+
+      <ol class="process-grid" aria-label="Our 4-step process">
+
+        <li class="proc-step" data-reveal>
+          <div class="proc-accent" aria-hidden="true"></div>
+          <div class="proc-num" aria-hidden="true">01</div>
+          <h3 class="proc-title">Fill the Brief</h3>
+          <p class="proc-desc">
+            Tell us about your project, goals, and budget via our contact form. We read every submission carefully: no templates, no bots.
+          </p>
+        </li>
+
+        <li class="proc-step" data-reveal data-delay="1">
+          <div class="proc-accent" style="background:var(--ink);" aria-hidden="true"></div>
+          <div class="proc-num" aria-hidden="true">02</div>
+          <h3 class="proc-title">Strategy Deck</h3>
+          <p class="proc-desc">
+            Within 48h we send a custom PDF proposal: strategy, timeline, and full project scope. No meetings. No back-and-forth.
+          </p>
+        </li>
+
+        <li class="proc-step" data-reveal data-delay="2">
+          <div class="proc-accent" style="background:var(--lime-mid);" aria-hidden="true"></div>
+          <div class="proc-num" aria-hidden="true">03</div>
+          <h3 class="proc-title">We Execute</h3>
+          <p class="proc-desc">
+            Our team builds your brand or website with precision and speed. You review at your own pace, async, no pressure, no calls.
+          </p>
+        </li>
+
+        <li class="proc-step" data-reveal data-delay="3">
+          <div class="proc-accent" aria-hidden="true"></div>
+          <div class="proc-num" aria-hidden="true">04</div>
+          <h3 class="proc-title">Full Delivery</h3>
+          <p class="proc-desc">
+            Files, assets, and complete handoff. Packaged in a final delivery PDF with brand guidelines, access credentials, and next-step recommendations.
+          </p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ════════ CONTACT ════════ -->
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+    <div class="sec-wrap">
+      <div class="contact-layout">
+
+        <!-- Left info -->
+        <div class="contact-left" data-reveal>
+          <p class="sec-eyebrow">04 — Contact</p>
+          <h2 class="sec-headline" id="contact-heading">
+            Start your<br>project. ✦
+          </h2>
+          <p class="sec-desc">
+            Fill the form and we'll get back to you within 48 hours.
+          </p>
+
+          <address class="contact-meta" aria-label="Contact details">
+            <div class="contact-meta-item">
+              <span class="contact-meta-ico" aria-hidden="true">✦</span>
+              <a
+                href="mailto:coodie.studio@gmail.com"
+                aria-label="Email us at hello@coodie.studio"
+              >coodie.studio@gmail.com</a>
             </div>
-
-            <div class="nav-center">
-                <a href="/" class="logo-link" aria-label="Coodie Studio Home">
-                    <img src="img/icon-coodie.webp" alt="Coodie Studio Logo" class="brand-logo" loading="lazy"
-                        width="800" height="600">
-                </a>
+            <div class="contact-meta-item">
+              <span class="contact-meta-ico" aria-hidden="true">✦</span>
+              <span>Response within 48 hours</span>
             </div>
-
-            <div class="nav-right desktop-only">
-
-                <div class="services-dropdown">
-                    <button class="nav-link services-trigger" aria-haspopup="true" aria-expanded="false"
-                        aria-controls="services-menu-desktop"
-                        style="background:none; border:none; color:inherit; font-family:inherit; padding:0; cursor:pointer;">Services</button>
-
-                    <div class="services-menu" id="services-menu-desktop" role="menu">
-                        <a href="onepage.html" role="menuitem">One-Page Website</a>
-                        <a href="ecommerce.html" role="menuitem">E-Commerce Website</a>
-                        <a href="multipage.html" role="menuitem">Multi-Page Website</a>
-                    </div>
-                </div>
-
-                <a href="about.html" class="nav-link">About</a>
-                <a href="contact.html" class="nav-link">Contact</a>
+            <div class="contact-meta-item">
+              <span class="contact-meta-ico" aria-hidden="true">✦</span>
+              <span>Working globally · EU · US · APAC</span>
             </div>
-
-            <button class="hamburger mobile-only" id="menu-toggle" aria-label="Menu">
-                <div class="hamburger-lines">
-                    <span class="line line-top"></span>
-                    <span class="line line-bottom"></span>
-                </div>
-            </button>
-        </nav>
-
-        <div class="mobile-menu-overlay" id="mobile-menu" aria-hidden="true">
-            <div class="menu-backdrop" id="menu-backdrop"></div>
-
-            <nav class="mobile-nav-links" aria-label="Mobile Navigation">
-                <div class="sidebar-header">
-                    <span class="sidebar-logo">COODIE_STUDIO™</span>
-                    <button class="close-sidebar" id="close-btn" aria-label="Close menu">&#10005;</button>
-                </div>
-
-                <div class="nav-links-wrapper">
-                    <a href="works.html">Work</a>
-
-                    <button class="mobile-services-trigger" id="mobile-services-btn" aria-expanded="false"
-                        aria-controls="mobile-services-submenu">
-                        Services <span class="mobile-services-arrow" aria-hidden="true">&#8595;</span>
-                    </button>
-                    <div class="mobile-services-submenu" id="mobile-services-submenu" aria-hidden="true" role="menu">
-                        <a href="onepage.html" target="_blank" rel="noopener" role="menuitem">One-Page Website</a>
-                        <a href="ecommerce.html" target="_blank" rel="noopener" role="menuitem">E-Commerce Website</a>
-                        <a href="multipage.html" target="_blank" rel="noopener" role="menuitem">Multi-Page Website</a>
-                    </div>
-
-                    <a href="about.html">About</a>
-                    <a href="contact.html">Contact</a>
-                </div>
-
-                <div class="sidebar-footer">
-                    <div class="system-status">
-                        <span class="pulse-dot"></span>
-                        <span>CURRENTLY AVAILABLE FOR NEW PROJECT</span>
-                    </div>
-                </div>
-            </nav>
+          </address>
         </div>
 
-        <div class="marquee-container" aria-hidden="true">
-            <div class="marquee-content" data-text="COODIE_STUDIO™">COODIE_STUDIO™ </div>
+        <!-- Right form -->
+        <div data-reveal data-delay="1">
+
+          <!--
+            ─────────────────────────────────────────
+            FORMSPREE: vai su formspree.io → New Form
+            e sostituisci YOUR_FORM_ID qui sotto
+            ─────────────────────────────────────────
+          -->
+          <form
+            id="contact-form"
+            class="contact-form"
+            action="https://formspree.io/f/mkoeyvzg"
+            method="POST"
+            novalidate
+            aria-label="Project brief form"
+          >
+
+            <div class="form-row-2">
+              <div class="form-field">
+                <label class="form-label" for="name">Your Name *</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Alex Johnson"
+                  required
+                  autocomplete="name"
+                  aria-required="true"
+                >
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="company">Company</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="company"
+                  name="company"
+                  placeholder="Acme Inc."
+                  autocomplete="organization"
+                >
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="email">Email Address *</label>
+              <input
+                class="form-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@company.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              >
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="service">Service Interested In</label>
+              <select
+                class="form-select"
+                id="service"
+                name="service"
+                aria-label="Select a service"
+              >
+                <option value="" disabled selected>What do you need?</option>
+                <option value="brand-start">Brand Start — from €150</option>
+                <option value="brand-studio">Brand Studio — from €890</option>
+                <option value="brand-web">Brand + Web — from €1,490</option>
+                <option value="custom">Custom project — let's discuss</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="message">Tell us about your project *</label>
+              <textarea
+                class="form-textarea"
+                id="message"
+                name="message"
+                placeholder="We're a startup launching in Q3 and need a full brand identity for our new product line..."
+                required
+                aria-required="true"
+                rows="5"
+              ></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button
+                type="submit"
+                class="btn btn-lime"
+                id="submit-btn"
+                aria-label="Submit your project brief to Coodie"
+              >
+                <span id="submit-lbl">Send Brief →</span>
+              </button>
+            </div>
+
+            <p class="form-fine">
+              We respond within 48h. No spam, ever.
+            </p>
+          </form>
+
+          <!-- Success state -->
+          <div
+            class="form-success"
+            id="form-success"
+            role="status"
+            aria-live="polite"
+            aria-label="Form submitted successfully"
+          >
+            <span class="success-star" aria-hidden="true">✦</span>
+            <h3>Brief received!</h3>
+            <p>We'll review your project and send a custom strategy deck within 48 hours. Check your inbox.</p>
+          </div>
+
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="hero-bottom">
-            <div class="bottom-left">
-                <h1>We build <span class="hl-yellow">websites.</span><br>That’s it.</h1>
-            </div>
-            <div class="bottom-right">
-                <a href="contact.html" class="btn-pill">Project Inquiries</a>
-            </div>
-        </div>
-    </header>
+</main>
 
-    <main id="main-content">
+<!-- ════════ FOOTER ════════ -->
+<footer role="contentinfo">
+  <div class="footer-inner">
 
-        <section class="about-section border-top" id="about" aria-labelledby="about-heading">
-            <div class="about-grid">
-                <div class="about-title-col">
-                    <h2 id="about-heading">THE<br><span class="hl-blue">STANDARD_</span></h2>
-                    <p>coodie_studio™ is an independent digital practice. We don't follow industry trends; we dictate
-                        them.</p>
-                </div>
+    <a href="/" class="footer-logo" aria-label="Coodie — International Creative Agency, back to homepage">
+      <img
+        src="assets/images/logo-icon.webp"
+        alt="Coodie icon mark"
+        width="28" height="28"
+        class="footer-logo-icon"
+        loading="lazy"
+        decoding="async"
+      >
+      <img
+        src="assets/images/logo-wordmark-light.webp"
+        alt="Coodie"
+        height="17"
+        class="footer-logo-word"
+        loading="lazy"
+        decoding="async"
+      >
+    </a>
 
-                <div class="about-content-col">
-                    <p class="long-desc">Forget bloated page builders and off-the-shelf templates. If you want average,
-                        look elsewhere. We engineer custom digital architectures from the ground up. Every pixel is
-                        intentional, every line of code is ruthlessly optimized for speed, aesthetics, and raw
-                        conversion power.</p>
+    <nav aria-label="Footer navigation">
+      <ul class="footer-nav" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-                    <div class="about-image-wrapper border-all border-dashed">
-                        <img src="img/Logo4.png" alt="Creative coding concept" class="monochrome-img" loading="lazy">
-                    </div>
+    <div class="footer-copy">
+      © 2026 Coodie — International Creative Agency<br>
+      Brand · Web · Strategy · Worldwide
+    </div>
 
-                    <p class="short-desc">Flawless design meets brutal execution. We elevate your brand to a tier your
-                        competitors simply can't reach.</p>
+  </div>
+</footer>
 
-                    <a href="contact.html" class="btn-dashed">INITIATE PROJECT <span class="arrow">→</span></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="works-section" id="work" aria-labelledby="work-heading">
-            <div class="section-header">
-                <span class="section-label">01 — SELECTED_ARCHIVES</span>
-                <h2 class="section-title" id="work-heading">PROVEN_<span class="hl-yellow">IMPACT.</span></h2>
-            </div>
-
-            <div class="works-grid">
-                <a href="https://coodiestudio.github.io/Loomline/" target="_blank" rel="noopener"
-                    class="work-item-wrapper">
-                    <article class="work-item">
-                        <div class="work-image-container">
-                            <img src="img/loomline.png" alt="Loomline Interior Design Project" class="work-img"
-                                loading="lazy">
-                            <div class="work-overlay">
-                                <span class="work-category">Interior design</span>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <h3>LOOMLINE</h3>
-                            <span class="work-year">2026</span>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="https://coodiestudio.github.io/Klaus_Studio/" target="_blank" rel="noopener"
-                    class="work-item-wrapper">
-                    <article class="work-item">
-                        <div class="work-image-container">
-                            <img src="img/klausstudio.png" alt="Architecture Studio Project" class="work-img"
-                                loading="lazy">
-                            <div class="work-overlay">
-                                <span class="work-category">Architecture</span>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <h3>KLAUS_STUDIO</h3>
-                            <span class="work-year">2025</span>
-                        </div>
-                    </article>
-                </a>
-
-                <!-- Third Project Placeholder -->
-                <a href="https://coodiestudio.github.io/Aero_core/" class="work-item-wrapper">
-                    <article class="work-item">
-                        <div class="work-image-container">
-                            <img src="img/aerocore.png" alt="Aero_Core" class="work-img" loading="lazy">
-                            <div class="work-overlay">
-                                <span class="work-category">Energy</span>
-                            </div>
-                        </div>
-                        <div class="work-info">
-                            <h3>AERO_CORE</h3>
-                            <span class="work-year">2026</span>
-                        </div>
-                    </article>
-                </a>
-            </div>
-
-            <div class="works-footer">
-                <a href="works.html" class="view-all">VIEW ALL CASE STUDIES <span class="arrow">→</span></a>
-            </div>
-        </section>
-
-        <section class="services-section" id="services" aria-labelledby="services-heading">
-            <div class="services-header">
-                <span class="section-label">02 — CORE_CAPABILITIES</span>
-                <h2 class="section-title" id="services-heading">THE_<span class="hl-blue">ARSENAL.</span></h2>
-                <p class="section-manifesto">We engineering your website from the ground up. Every pixel is intentional,
-                    every line of code is ruthlessly optimized for speed, aesthetics, and raw conversion power.</p>
-            </div>
-
-            <div class="services-list-grid">
-
-                <article class="service-item reveal-up">
-                    <div class="service-meta">
-                        <span class="service-num">01</span>
-                        <a href="works.html" class="work-link" aria-label="See work for One-Page Website">See Work <span
-                                class="arrow" aria-hidden="true">↗</span></a>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-name">ONE-PAGE WEBSITE</h3>
-                        <p class="service-desc">Atomic precision. Short, sweet, and powerful. Designed for those who
-                            don't need a thousand pages to command immediate attention and convert visitors instantly.
-                        </p>
-                    </div>
-                    <div class="service-footer">
-                        <a href="onepage.html" class="view-details" aria-label="View details for One-Page Website">VIEW
-                            DETAILS <span aria-hidden="true">→</span></a>
-                    </div>
-                </article>
-
-                <article class="service-item reveal-up">
-                    <div class="service-meta">
-                        <span class="service-num">02</span>
-                        <a href="works.html" class="work-link" aria-label="See work for Custom E-Commerce">See Work <span
-                                class="arrow" aria-hidden="true">↗</span></a>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-name">CUSTOM E-COMMERCE</h3>
-                        <p class="service-desc">High-octane commerce. Shopify stores that don't just look good: they
-                            dominate. We build the custom engine, you drive the sales and the ROI.</p>
-                    </div>
-                    <div class="service-footer">
-                        <a href="ecommerce.html" class="view-details"
-                            aria-label="View details for Custom E-Commerce">VIEW DETAILS <span
-                                aria-hidden="true">→</span></a>
-                    </div>
-                </article>
-
-                <article class="service-item reveal-up">
-                    <div class="service-meta">
-                        <span class="service-num">03</span>
-                        <a href="works.html" class="work-link" aria-label="See work for Multi-Page Website">See Work
-                            <span class="arrow" aria-hidden="true">↗</span></a>
-                    </div>
-                    <div class="service-info">
-                        <h3 class="service-name">MULTI-PAGE WEBSITE</h3>
-                        <p class="service-desc">Digital monuments. A complete, scalable ecosystem built for brands that
-                            need room to breathe and a flawless architecture to show the world their project.</p>
-                    </div>
-                    <div class="service-footer">
-                        <a href="multipage.html" class="view-details"
-                            aria-label="View details for Multi-Page Website">VIEW DETAILS <span
-                                aria-hidden="true">→</span></a>
-                    </div>
-                </article>
-
-            </div>
-        </section>
-
-
-        <section class="engine-contact" id="contact" aria-labelledby="contact-heading">
-            <div class="engine-container">
-
-                <div class="engine-info">
-                    <div class="sticky-info">
-                        <span class="status-indicator">● AVAILABLE FOR Q3 2026</span>
-                        <h2 class="engine-title" id="contact-heading">PROJECT<br><span class="hl-yellow">SPECIFICATION</span></h2>
-                        <p class="engine-lead">
-                            We don't "take orders." We engineer solutions.
-                            Fill out the technical brief to initiate the audit.
-                        </p>
-                        <div class="contact-direct">
-                            <span class="label">[MAIL]</span>
-                            <a href="mailto:coodie.studio@gmail.com">coodie.studio@gmail.com</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="engine-form-wrapper">
-                    <form class="raw-form" id="contact-form-system" action="https://formspree.io/f/xlgzpabb"
-                        method="POST">
-
-                        <div class="form-section">
-                            <label for="full-name" class="form-num">01. IDENTITY</label>
-                            <div class="input-group">
-                                <input type="text" id="full-name" name="name" placeholder="FULL NAME" required>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <label for="email-address" class="form-num">02. COMMUNICATION</label>
-                            <div class="input-group">
-                                <input type="email" id="email-address" name="email" placeholder="EMAIL ADDRESS"
-                                    required>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <label for="project-nature" class="form-num">03. SCOPE</label>
-                            <div class="select-wrapper">
-                                <select id="project-nature" name="project-type" required>
-                                    <option value="" disabled selected>NATURE OF PROJECT</option>
-                                    <option value="arch">ONE-PAGE Website</option>
-                                    <option value="eco">E-COMMERCE Website</option>
-                                    <option value="custom">MULTI-PAGE Website</option>
-                                </select>
-                                <div class="custom-arrow" aria-hidden="true">
-                                    <svg width="10" height="6" viewBox="0 0 10 6">
-                                        <path d="M1 1L5 5L9 1" stroke="white" stroke-width="2" fill="none" />
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-section">
-                            <label for="project-vision" class="form-num">04. OBJECTIVE</label>
-                            <div class="input-group">
-                                <textarea id="project-vision" name="message" rows="1" placeholder="DESCRIBE THE VISION"
-                                    oninput="this.style.height = '';this.style.height = this.scrollHeight + 'px'"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-footer">
-                            <button type="submit" class="transmit-btn">
-                                <span class="btn-text">TRANSMIT DATA</span>
-                                <span class="btn-icon">→</span>
-                            </button>
-                            <p id="form-status-contact"
-                                style="margin-top:1rem; font-size:0.8rem; font-weight:700; letter-spacing:0.1em;"></p>
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
-        </section>
-
-        <footer class="hyper-footer">
-            <div class="footer-top-line">
-                <div class="footer-nav-minimal">
-                    <a href="works.html">WORK</a>
-                    <a href="contact.html">CONTACT</a>
-                    <a href="mailto:coodie.studio@gmail.com">EMAIL</a>
-                </div>
-
-                <div class="footer-center">
-                    <h2 class="footer-brand-minimal">COODIE_STUDIO™</h2>
-                </div>
-
-                <div class="footer-meta-minimal">
-                    <div class="social-row">
-                        <a href="https://www.instagram.com/coodie_studio/">IG</a>
-                        <span>/</span>
-                        <a href="https://www.tiktok.com/@coodie.studio?is_from_webapp=1&sender_device=pc">TT</a>
-                    </div>
-                    <span id="live-clock" class="minimal-clock">00:00:00 CEST</span>
-                </div>
-            </div>
-
-            <div class="footer-legal-line">
-                <p>Copyright © 2026 Coodie Studio. All rights reserved.</p>
-                <ul class="policies" role="list">
-                    <li><a href="privacy.html" title="Read our privacy policy">Privacy Policy</a></li>
-                    <li><a href="cookie.html" title="Read our cookie policy">Cookie Policy</a></li>
-                </ul>
-            </div>
-        </footer>
-
-        <script src="script.js" defer></script>
+<script src="assets/js/main.js"></script>
 </body>
-
 </html>
